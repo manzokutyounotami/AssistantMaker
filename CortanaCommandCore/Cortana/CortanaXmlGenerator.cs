@@ -27,12 +27,16 @@ namespace CortanaCommand.Core.Cortana
             root.Add(commandSet);
         }
 
-        public void AddCommandService(string name,string example,string listenFor,string feedback,string target)
+        public void AddCommandService(string name,string example,string[] listenFor,string feedback,string target)
         {
             XElement command = new XElement("Command");
             command.SetAttributeValue("Name",name);
             command.Add(new XElement("Example",example));
-            command.Add(new XElement("ListenFor", listenFor));
+            foreach(var listen in listenFor)
+            {
+                command.Add(new XElement("ListenFor", listen));
+            }
+            
             command.Add(new XElement("Feedback", feedback));
             XElement service = new XElement("VoiceCommandService");
             service.SetAttributeValue("Target",target);
@@ -40,12 +44,15 @@ namespace CortanaCommand.Core.Cortana
             commandSet.Add(command);
         }
 
-        public void AddCommandNavigate(string name, string example, string listenFor, string feedback,string target)
+        public void AddCommandNavigate(string name, string example, string[] listenFor, string feedback,string target)
         {
             XElement command = new XElement("Command");
             command.SetAttributeValue("Name", name);
             command.Add(new XElement("Example", example));
-            command.Add(new XElement("ListenFor", listenFor));
+            foreach (var listen in listenFor)
+            {
+                command.Add(new XElement("ListenFor", listen));
+            }
             command.Add(new XElement("Feedback", feedback));
             XElement service = new XElement("Navigate");
             service.SetAttributeValue("Target", target);

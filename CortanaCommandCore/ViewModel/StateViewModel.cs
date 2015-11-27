@@ -73,7 +73,7 @@ namespace CortanaCommand.ViewModel
         {
             Example = "こんにちはコルタナ";
             ListenFor = "[こんにちは]コルタナ";
-            FeedBack = "はい、こんにちは、マスター";
+            FeedBack = "認識";
         }
 
         

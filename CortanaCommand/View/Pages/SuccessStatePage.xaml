@@ -16,7 +16,7 @@
         
         <StackPanel Grid.Column="0" Margin="0,80,0,0">
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ListenFor" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
-            <TextBox Text="{Binding ListenFor,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Text="{Binding ListenFor,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="111" />
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Example" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
             <TextBox Text="{Binding Example,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FeedBack" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>

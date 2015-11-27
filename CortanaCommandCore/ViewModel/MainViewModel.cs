@@ -128,8 +128,9 @@ namespace CortanaCommand.ViewModel
                     {
                         if(state is SuccessStateViewModel)
                         {
+                            
                             generator.AddCommandService(command.Name+"_"+state.Name,state.Example,
-                                state.ListenFor,
+                                state.ListenFor.Replace("\r","").Split('\n'),
                                 state.FeedBack,
                                 voiceCommandServiceName);
                         }

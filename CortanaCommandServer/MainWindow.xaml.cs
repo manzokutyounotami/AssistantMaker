@@ -23,6 +23,12 @@ namespace CortanaCommandServer
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = App.ViewModel;
+            App.ViewModel.StartServerCommand.Execute(null);
+            App.Current.Exit += (s, e) =>
+            {
+                App.ViewModel.StopServerCommand.Execute(null);
+            };
         }
     }
 }

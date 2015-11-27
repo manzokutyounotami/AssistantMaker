@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CortanaCommand.ViewModel
 {
-    public class SccessStateViewModel:StateViewModel
+    public class SuccessStateViewModel:StateViewModel
     {
         private string _utterance;
 
@@ -38,7 +38,7 @@ namespace CortanaCommand.ViewModel
 
         private string _script;
 
-        public SccessStateViewModel()
+        public SuccessStateViewModel()
         {
             
         }

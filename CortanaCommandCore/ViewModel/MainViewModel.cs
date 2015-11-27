@@ -126,7 +126,7 @@ namespace CortanaCommand.ViewModel
                 {
                     foreach(var state in command.StateList)
                     {
-                        if(state is SccessStateViewModel)
+                        if(state is SuccessStateViewModel)
                         {
                             generator.AddCommandService(command.Name+"_"+state.Name,state.Example,
                                 state.ListenFor,

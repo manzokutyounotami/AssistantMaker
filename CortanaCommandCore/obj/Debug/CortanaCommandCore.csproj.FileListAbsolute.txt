@@ -3,3 +3,8 @@ c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaComma
 c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.dll
 c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.pdb
 c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.csprojResolveAssemblyReference.cache
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\bin\Debug\CortanaCommandCore.dll
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\bin\Debug\CortanaCommandCore.pdb
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.dll
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.pdb
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.csprojResolveAssemblyReference.cache

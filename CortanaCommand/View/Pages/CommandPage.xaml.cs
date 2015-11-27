@@ -41,9 +41,9 @@ namespace CortanaCommand.View.Pages
             if (listBoxState.SelectedIndex != -1)
             {
                 var vm = listBoxState.SelectedItem;
-                if (vm is SccessStateViewModel)
+                if (vm is SuccessStateViewModel)
                 {
-                    this.frameState.Navigate(typeof(SccessStatePage), vm);
+                    this.frameState.Navigate(typeof(SuccessStatePage), vm);
                 }
             }
         }

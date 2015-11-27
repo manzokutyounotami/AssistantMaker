@@ -26,6 +26,21 @@ namespace CortanaCommand.ViewModel
             }
         }
 
+        private int _currentStateNum;
+
+        public int CurrentStateNum
+        {
+            get
+            {
+                return _currentStateNum;
+            }
+
+            set
+            {
+                this.Set(ref _currentStateNum,value);
+            }
+        }
+
         public ObservableCollection<StateViewModel> StateList
         {
             get
@@ -45,9 +60,12 @@ namespace CortanaCommand.ViewModel
 
         public RelayCommand<StateViewModel> DeleteStateCommand { get; set; }
 
+        
+
         public CommandViewModel()
         {
             this.StateList = new ObservableCollection<StateViewModel>();
+            CurrentStateNum = 0;
             
             DeleteStateCommand = new RelayCommand<StateViewModel>((state)=>
             {
@@ -72,7 +90,7 @@ namespace CortanaCommand.ViewModel
                     }
                 }
                 maxNum++;
-                var vm = new SccessStateViewModel();
+                var vm = new SuccessStateViewModel();
                 vm.Name = "State"+maxNum;
                 this.StateList.Add(vm);
             });

@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CortanaCommandServer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="CortanaCommandServer" Height="350" Width="525">
     <Grid>
-        
+        <ListBox x:Name="listBox" Margin="2" ItemsSource="{Binding LogList}"/>
+
     </Grid>
 </Window>

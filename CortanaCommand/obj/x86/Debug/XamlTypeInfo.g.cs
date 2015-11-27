@@ -144,7 +144,7 @@ namespace CortanaCommand.CortanaCommand_XamlTypeInfo
             _typeNameTable[8] = "CortanaCommand.FavoritePage";
             _typeNameTable[9] = "CortanaCommand.HomePage";
             _typeNameTable[10] = "CortanaCommand.MainPage";
-            _typeNameTable[11] = "CortanaCommand.View.Pages.SccessStatePage";
+            _typeNameTable[11] = "CortanaCommand.View.Pages.SuccessStatePage";
             _typeNameTable[12] = "CortanaCommand.SettingPage";
 
             _typeTable = new global::System.Type[13];
@@ -159,7 +159,7 @@ namespace CortanaCommand.CortanaCommand_XamlTypeInfo
             _typeTable[8] = typeof(global::CortanaCommand.FavoritePage);
             _typeTable[9] = typeof(global::CortanaCommand.HomePage);
             _typeTable[10] = typeof(global::CortanaCommand.MainPage);
-            _typeTable[11] = typeof(global::CortanaCommand.View.Pages.SccessStatePage);
+            _typeTable[11] = typeof(global::CortanaCommand.View.Pages.SuccessStatePage);
             _typeTable[12] = typeof(global::CortanaCommand.SettingPage);
         }
 
@@ -200,7 +200,7 @@ namespace CortanaCommand.CortanaCommand_XamlTypeInfo
         private object Activate_8_FavoritePage() { return new global::CortanaCommand.FavoritePage(); }
         private object Activate_9_HomePage() { return new global::CortanaCommand.HomePage(); }
         private object Activate_10_MainPage() { return new global::CortanaCommand.MainPage(); }
-        private object Activate_11_SccessStatePage() { return new global::CortanaCommand.View.Pages.SccessStatePage(); }
+        private object Activate_11_SuccessStatePage() { return new global::CortanaCommand.View.Pages.SuccessStatePage(); }
         private object Activate_12_SettingPage() { return new global::CortanaCommand.SettingPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
@@ -280,9 +280,9 @@ namespace CortanaCommand.CortanaCommand_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 11:   //  CortanaCommand.View.Pages.SccessStatePage
+            case 11:   //  CortanaCommand.View.Pages.SuccessStatePage
                 userType = new global::CortanaCommand.CortanaCommand_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_SccessStatePage;
+                userType.Activator = Activate_11_SuccessStatePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

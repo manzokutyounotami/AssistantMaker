@@ -115,8 +115,8 @@
     <Compile Include="View\Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Pages\SccessStatePage.xaml.cs">
-      <DependentUpon>SccessStatePage.xaml</DependentUpon>
+    <Compile Include="View\Pages\SuccessStatePage.xaml.cs">
+      <DependentUpon>SuccessStatePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Pages\SettingPage.xaml.cs">
       <DependentUpon>SettingPage.xaml</DependentUpon>
@@ -166,7 +166,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\Pages\SccessStatePage.xaml">
+    <Page Include="View\Pages\SuccessStatePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

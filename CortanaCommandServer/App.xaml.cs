@@ -13,5 +13,15 @@ namespace CortanaCommandServer
     /// </summary>
     public partial class App : Application
     {
+        public static ServerViewModel ViewModel;
+        public App()
+        {
+            ViewModel = new ServerViewModel();
+        }
+
+        protected override void OnExit(ExitEventArgs e)
+        {
+            base.OnExit(e);
+        }
     }
 }

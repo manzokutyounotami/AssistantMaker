@@ -21,9 +21,9 @@ namespace CortanaCommand.View.Pages
     /// <summary>
     /// それ自体で使用できる空白ページまたはフレーム内に移動できる空白ページ。
     /// </summary>
-    public sealed partial class SccessStatePage : Page
+    public sealed partial class SuccessStatePage : Page
     {
-        public SccessStatePage()
+        public SuccessStatePage()
         {
             this.InitializeComponent();
         }
@@ -31,7 +31,7 @@ namespace CortanaCommand.View.Pages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            this.DataContext = e.Parameter as SccessStateViewModel;
+            this.DataContext = e.Parameter as SuccessStateViewModel;
         }
     }
 }

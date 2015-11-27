@@ -25,7 +25,8 @@
                     <RowDefinition Height="72"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock x:Name="textBlock" Margin="10,10,0,0" TextWrapping="Wrap" Text="State List" VerticalAlignment="Top" Width="280" FontSize="29.333" HorizontalAlignment="Left" Foreground="White"/>
+                <TextBlock x:Name="textBlock" Margin="10,0,0,0" TextWrapping="Wrap" Text="State List" VerticalAlignment="Top" Width="130" FontSize="24" HorizontalAlignment="Left" Foreground="White"/>
+                <TextBlock x:Name="textBlock_Copy" Margin="10,30,0,-22" TextWrapping="Wrap" Text="CurrentState" VerticalAlignment="Top" Width="180" FontSize="24" HorizontalAlignment="Left" Foreground="White"/>
                 <ListBox x:Name="listBoxState"  Grid.Row="1" Background="{x:Null}" ItemsSource="{Binding StateList}" SelectionChanged="listBoxState_SelectionChanged" ItemContainerStyle="{StaticResource ListBoxItemStyle}" CanDrag="True" >
                     <ListBox.Transitions>
                         <TransitionCollection>
@@ -42,7 +43,7 @@
                                     </MenuFlyout>
                                 </FlyoutBase.AttachedFlyout>
                             </Grid>
-                            
+
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
@@ -55,9 +56,11 @@
                         </AppBarButton.Flyout>
                     </AppBarButton>
                 </CommandBar>
+                <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="195,32,0,0" TextWrapping="Wrap" Text="{Binding CurrentStateNum,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="135"/>
+
             </Grid>
             <Frame x:Name="frameState" Grid.Column="1"></Frame>
         </Grid>
-        
+
     </Grid>
 </Page>

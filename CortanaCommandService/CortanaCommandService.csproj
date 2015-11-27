@@ -111,6 +111,12 @@
     <Compile Include="CommandService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CortanaCommandCore\CortanaCommandCore.csproj">
+      <Project>{7e409cb5-fc40-4dc1-bf1c-b535239fc94c}</Project>
+      <Name>CortanaCommandCore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

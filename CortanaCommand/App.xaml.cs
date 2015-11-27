@@ -1,4 +1,5 @@
 ﻿using CortanaCommand.ViewModel;
+using CortanaCommandCore.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,6 @@ namespace CortanaCommand
     sealed partial class App : Application
     {
         public static MainViewModel ViewModel;
-        private string viewModelSaveDataStr = "ViewModelSaveData";
         /// <summary>
         /// 単一アプリケーション オブジェクトを初期化します。これは、実行される作成したコードの
         ///最初の行であるため、main() または WinMain() と論理的に等価です。
@@ -45,7 +45,11 @@ namespace CortanaCommand
             this.Resuming += OnResuming;
             
             ViewModel = new MainViewModel();
-            ResumeAsync().Wait();
+            var vm = DataLoadAsync().Result;
+            if (vm != null)
+            {
+                ViewModel = vm;
+            }
             ViewModel.OnRegisterVoiceCommand += async(xml) =>
             {
                 try {
@@ -53,6 +57,7 @@ namespace CortanaCommand
                     var file = await folder.CreateFileAsync("VoiceCommandFile", CreationCollisionOption.ReplaceExisting);
                     await FileIO.WriteTextAsync(file, xml);
                     await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(file);
+                    await DataSaveAsync();
                     var dialog = new MessageDialog("Cortanaの更新が完了しました");
                     await dialog.ShowAsync();
                 }
@@ -138,43 +143,52 @@ namespace CortanaCommand
         {
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: アプリケーションの状態を保存してバックグラウンドの動作があれば停止します
-            var json = JsonConvert.SerializeObject(App.ViewModel, new JsonSerializerSettings
-            {
-                TypeNameHandling = TypeNameHandling.All
-            });
-            var folder = ApplicationData.Current.LocalFolder;
-            var file = await folder.CreateFileAsync(viewModelSaveDataStr, CreationCollisionOption.ReplaceExisting);
-            await FileIO.WriteTextAsync(file,json);
+            await DataSaveAsync();
             deferral.Complete();
         }
 
         private async void OnResuming(object sender, object e)
         {
-            await ResumeAsync();
+            var vm = await DataLoadAsync();
+            if(vm != null)
+            {
+                App.ViewModel = vm;
+            }
         }
 
-        private async Task ResumeAsync()
+        private async Task DataSaveAsync()
+        {
+            var json = JsonConvert.SerializeObject(App.ViewModel, new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.All
+            });
+            var folder = ApplicationData.Current.LocalFolder;
+            var file = await folder.CreateFileAsync(SettingManager.ViewModelDataFileName, CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(file, json);
+        }
+
+        private async Task<MainViewModel> DataLoadAsync()
         {
             var folder = ApplicationData.Current.LocalFolder;
             var files = await folder.GetFilesAsync();
-            if (files.Any(q => q.Name == viewModelSaveDataStr))
+            if (files.Any(q => q.Name == SettingManager.ViewModelDataFileName))
             {
-                //try
-                //{
-                var file = files.First(q => q.Name == viewModelSaveDataStr);
-                var json = await FileIO.ReadTextAsync(file);
-                var viewModel = JsonConvert.DeserializeObject<MainViewModel>(json, new JsonSerializerSettings
+                try
                 {
-                    TypeNameHandling = TypeNameHandling.Auto
-                });
-                App.ViewModel = viewModel;
-                /*}
+                    var file = files.First(q => q.Name == SettingManager.ViewModelDataFileName);
+                    var json = await FileIO.ReadTextAsync(file);
+                    var viewModel = JsonConvert.DeserializeObject<MainViewModel>(json, new JsonSerializerSettings
+                    {
+                        TypeNameHandling = TypeNameHandling.Auto
+                    });
+                    return viewModel;
+                }
                 catch (Exception)
                 {
 
                 }
-                */
             }
+            return null;
         }
     }
 }

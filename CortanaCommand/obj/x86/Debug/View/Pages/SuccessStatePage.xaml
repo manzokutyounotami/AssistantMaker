@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="CortanaCommand.View.Pages.SccessStatePage"
+    x:Class="CortanaCommand.View.Pages.SuccessStatePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:CortanaCommand.View.Pages"
@@ -12,10 +12,10 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="257" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:ConnectionId='1' x:Name="textBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="257" Background="{x:Null}" Foreground="White"/>
         
         <StackPanel Grid.Column="0" Margin="0,80,0,0">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ListenFor" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
+            <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ListenFor" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
             <TextBox Text="{Binding ListenFor,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Example" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
             <TextBox Text="{Binding Example,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
@@ -30,3 +30,4 @@
         </StackPanel>
     </Grid>
 </Page>
+

@@ -1,0 +1,19 @@
+﻿<control:NodeBase
+    x:Class="CortanaSwitch.View.Control.Node"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CortanaSwitch.View.Control"
+    xmlns:control="using:CortanaSwitch.View.Control"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    NodeId="{Binding NodeId,Mode=TwoWay}"
+    >
+    <Grid>
+        <Border Background="#FFD6D6D6" Margin="20"></Border>
+        <control:InConnector x:Name="inConnector1" Width="50" Height="50" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center"/>
+        <control:OutConnector x:Name="outConnector1" Width="50" Height="50" Margin="0" HorizontalAlignment="Right" VerticalAlignment="Center"></control:OutConnector>
+    </Grid>
+</control:NodeBase>

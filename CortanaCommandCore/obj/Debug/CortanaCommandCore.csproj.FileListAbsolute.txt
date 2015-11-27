@@ -1,0 +1,5 @@
+c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\bin\Debug\CortanaCommandCore.dll
+c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\bin\Debug\CortanaCommandCore.pdb
+c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.dll
+c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.pdb
+c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.csprojResolveAssemblyReference.cache

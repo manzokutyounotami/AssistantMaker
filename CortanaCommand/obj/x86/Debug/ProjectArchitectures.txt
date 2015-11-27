@@ -1,0 +1,3 @@
+c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommand\CortanaCommand.csproj;x86
+c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandCore\CortanaCommandCore.csproj;neutral
+c:\users\garic\documents\visual studio 2015\Projects\CortanaCommand\CortanaCommandService\CortanaCommandService.csproj;x86

@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="CortanaCommand.View.Pages.CommandPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CortanaCommand.View.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBox x:ConnectionId='6' x:Name="textBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="45" Width="724" Background="{x:Null}" FontSize="26.667" Foreground="White"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="340"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Background="#4C000000">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="72"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock x:ConnectionId='2' x:Name="textBlock" Margin="10,10,0,0" TextWrapping="Wrap" Text="State List" VerticalAlignment="Top" Width="280" FontSize="29.333" HorizontalAlignment="Left" Foreground="White"/>
+                <ListBox x:ConnectionId='3' x:Name="listBoxState"  Grid.Row="1" Background="{x:Null}" ItemsSource="{Binding StateList}"                                                  ItemContainerStyle="{StaticResource ListBoxItemStyle}" CanDrag="True" >
+                    <ListBox.Transitions>
+                        <TransitionCollection>
+                            <AddDeleteThemeTransition/>
+                        </TransitionCollection>
+                    </ListBox.Transitions>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid x:ConnectionId='4' Height="30"                               >
+                                <TextBlock Text="{Binding Name}" />
+                                <FlyoutBase.AttachedFlyout>
+                                    <MenuFlyout Placement="Bottom">
+                                        <MenuFlyoutItem x:ConnectionId='5' x:Name="menuItemState" Text="削除"                             />
+                                    </MenuFlyout>
+                                </FlyoutBase.AttachedFlyout>
+                            </Grid>
+                            
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <CommandBar Grid.Row="1" VerticalAlignment="Bottom">
+                    <AppBarButton Icon="Add">
+                        <AppBarButton.Flyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem Text="正常応答" Command="{Binding AddSuccessStateCommand}" />
+                            </MenuFlyout>
+                        </AppBarButton.Flyout>
+                    </AppBarButton>
+                </CommandBar>
+            </Grid>
+            <Frame x:ConnectionId='1' x:Name="frameState" Grid.Column="1"></Frame>
+        </Grid>
+        
+    </Grid>
+</Page>
+

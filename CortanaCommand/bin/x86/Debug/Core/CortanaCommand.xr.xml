@@ -10,6 +10,7 @@
     <RootPropertyPathName Name="CommandList" />
     <RootPropertyPathName Name="UpdateCortanaCommand" />
     <RootPropertyPathName Name="IsPaneOpen" />
+    <RootPropertyPathName Name="Protocol" />
     <RootPropertyPathName Name="Script" />
     <RootPropertyPathName Name="Utterance" />
     <RootPropertyPathName Name="FeedBack" />
@@ -242,6 +243,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="AcceptsReturn" />
       <RootProperty Name="IsReadOnly" />
+      <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Background" />

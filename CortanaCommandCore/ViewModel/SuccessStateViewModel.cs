@@ -23,20 +23,7 @@ namespace CortanaCommand.ViewModel
             }
         }
 
-        public string Script
-        {
-            get
-            {
-                return _script;
-            }
-
-            set
-            {
-                this.Set(ref _script,value);
-            }
-        }
-
-        private string _script;
+        
 
         public SuccessStateViewModel()
         {

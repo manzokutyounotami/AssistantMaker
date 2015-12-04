@@ -69,6 +69,30 @@ namespace CortanaCommand.ViewModel
 
         private string _feedBack;
 
+        public string Script
+        {
+            get
+            {
+                return _script;
+            }
+
+            set
+            {
+                this.Set(ref _script, value);
+            }
+        }
+
+        private string _script;
+
+        private string _protocol;
+
+        public string Protocol
+        {
+            get { return _protocol; }
+            set { this.Set(ref _protocol, value); }
+        }
+
+
         public StateViewModel()
         {
             Example = "こんにちはコルタナ";

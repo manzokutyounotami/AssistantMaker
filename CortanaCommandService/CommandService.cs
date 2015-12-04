@@ -15,6 +15,7 @@ using Windows.Networking.Connectivity;
 using Windows.Networking.Sockets;
 using Windows.Storage;
 using Windows.Storage.Streams;
+using Windows.System;
 using Windows.UI.Notifications;
 
 namespace CortanaCommandService
@@ -23,7 +24,7 @@ namespace CortanaCommandService
     {
         private BackgroundTaskDeferral serviceDeferral;
         VoiceCommandServiceConnection voiceServiceConnection;
-        bool isRunningServer = true;
+        bool isRunningServer = false;
 
         public async void Run(IBackgroundTaskInstance taskInstance)
         {
@@ -76,6 +77,7 @@ namespace CortanaCommandService
                                 await writer.FlushAsync();
                                 writer.Dispose();
                                 socket.Dispose();
+                                isRunningServer = true;
                                 
                             }
                             catch (Exception)
@@ -87,17 +89,25 @@ namespace CortanaCommandService
                                 var errorResponse = VoiceCommandResponse.CreateResponse(errorMsg);
                                 await voiceServiceConnection.ReportFailureAsync(errorResponse);
                                 isRunningServer = false;
+                                return;
                             }
                         }
-                        
-                        if (isRunningServer)
+
+                        if (!string.IsNullOrEmpty(state.Protocol))
                         {
-                            var message = new VoiceCommandUserMessage();
-                            message.SpokenMessage = state.Utterance;
-                            message.DisplayMessage = state.Utterance;
-                            var response = VoiceCommandResponse.CreateResponse(message);
-                            await voiceServiceConnection.ReportSuccessAsync(response);
+                            await Launcher.LaunchUriAsync(new Uri(state.Protocol));
                         }
+
+                        if (string.IsNullOrEmpty(state.Utterance))
+                        {
+                            state.Utterance = "";
+                        }
+                        var message = new VoiceCommandUserMessage();
+                        message.SpokenMessage = state.Utterance;
+                        message.DisplayMessage = state.Utterance;
+                        var response = VoiceCommandResponse.CreateResponse(message);
+                        await voiceServiceConnection.ReportSuccessAsync(response);
+                        
                     }
 
                     await DataSaveAsync(viewModel);

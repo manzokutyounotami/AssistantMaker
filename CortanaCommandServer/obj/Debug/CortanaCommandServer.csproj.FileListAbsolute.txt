@@ -1,9 +1,6 @@
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\CortanaCommandServer.exe.config
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\CortanaCommandServer.exe
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\CortanaCommandServer.pdb
-C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\CortanaCommandCore.dll
-C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\CortanaCommandCore.pdb
-C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\obj\Debug\CortanaCommandServer.csprojResolveAssemblyReference.cache
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\obj\Debug\MainWindow.g.cs
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\obj\Debug\App.g.cs
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\obj\Debug\CortanaCommandServer_MarkupCompile.cache
@@ -14,11 +11,15 @@ C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\o
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\obj\Debug\CortanaCommandServer.csproj.GenerateResource.Cache
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\obj\Debug\CortanaCommandServer.exe
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\obj\Debug\CortanaCommandServer.pdb
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\CortanaCommandCore.dll
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\CortanaCommandCore.pdb
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\obj\Debug\CortanaCommandServer.csprojResolveAssemblyReference.cache
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\GalaSoft.MvvmLight.dll
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\GalaSoft.MvvmLight.Extras.dll
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\GalaSoft.MvvmLight.Platform.dll
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\Microsoft.Practices.ServiceLocation.dll
-C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\Newtonsoft.Json.dll
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\System.Windows.Interactivity.dll
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\GalaSoft.MvvmLight.pdb
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\GalaSoft.MvvmLight.xml
@@ -28,4 +29,3 @@ C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\b
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\GalaSoft.MvvmLight.Platform.xml
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandServer\bin\Debug\Newtonsoft.Json.xml

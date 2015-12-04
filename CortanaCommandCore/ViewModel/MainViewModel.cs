@@ -149,7 +149,7 @@ namespace CortanaCommand.ViewModel
 
             };
 
-            CommandPrefix = "コルタナコマンド";
+            CommandPrefix = "コルタナ";
             Example = "こんにちはコルタナ";
         }
 

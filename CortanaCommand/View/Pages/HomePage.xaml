@@ -7,29 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Resources>
-        
+
     </Page.Resources>
     <Page.Transitions>
         <TransitionCollection>
-            <EntranceThemeTransition FromVerticalOffset="40" />
+            <EntranceThemeTransition FromVerticalOffset="0" FromHorizontalOffset="-80" />
         </TransitionCollection>
     </Page.Transitions>
 
-    <Grid>
-        <Grid.Background>
-            <SolidColorBrush Color="{StaticResource EditorBackground}"/>
-        </Grid.Background>
+    <Grid Background="{StaticResource ApplicationThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="340"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" Background="White">
             <Grid.RowDefinitions>
-                <RowDefinition Height="60"/>
+                <RowDefinition Height="48"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1">
-                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,7,0,0" TextWrapping="Wrap" Text="Command" VerticalAlignment="Top" Foreground="{StaticResource ApplicationThemeBrush}" FontSize="29.333"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Command" VerticalAlignment="Center" Foreground="{StaticResource ApplicationThemeBrush}" FontSize="21.333"/>
             </Grid>
             <ListBox x:Name="listBox_command" Margin="0" Grid.Row="1" Background="White" ItemsSource="{Binding CommandList}" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1" SelectionChanged="listBox_command_SelectionChanged" ItemContainerStyle="{StaticResource ListBoxItemStyle}" CanDrag="True">
                 <ListBox.Transitions>
@@ -41,7 +38,7 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid x:Name="gridListTemplate" RightTapped="gridListTemplate_RightTapped" Height="30">
-                            <TextBlock Text="{Binding Name}" />
+                            <TextBlock Text="{Binding Name}" FontSize="18" />
                             <FlyoutBase.AttachedFlyout>
                                 <MenuFlyout Placement="Bottom">
                                     <MenuFlyoutItem x:Name="menuItemDelete" Text="削除" Click="menuItemDelete_Click" />
@@ -51,7 +48,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <CommandBar VerticalAlignment="Bottom" Height="48" Grid.Row="1">
+            <CommandBar VerticalAlignment="Bottom" Grid.Row="1">
                 <CommandBar.PrimaryCommands>
                     <AppBarButton Icon="Add" Label="Add" Command="{Binding AddCommandCommand}" />
                 </CommandBar.PrimaryCommands>

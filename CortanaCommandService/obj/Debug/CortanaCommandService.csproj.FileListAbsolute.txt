@@ -19,3 +19,4 @@ C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\obj\Debug\qualifiers.txt
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\obj\Debug\qualifiers.txt.intermediate
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\obj\Debug\ResourceHandlingTask.state

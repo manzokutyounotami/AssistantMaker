@@ -43,7 +43,7 @@ namespace CortanaCommand.View.Pages
                 var vm = listBoxState.SelectedItem;
                 if (vm is SuccessStateViewModel)
                 {
-                    this.frameState.Navigate(typeof(SuccessStatePage), vm);
+                    App.NavigateFrame(frameState, typeof(SuccessStatePage), vm);
                 }
             }
         }

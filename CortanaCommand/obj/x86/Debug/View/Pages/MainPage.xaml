@@ -5,7 +5,7 @@
     xmlns:local="using:CortanaCommand"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"                      >
+    mc:Ignorable="d"                     >
     
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -24,26 +24,17 @@
                         <Setter Target="splitView.(SplitView.DisplayMode)" Value="Overlay"/>
                         <Setter Target="splitView.(SplitView.IsPaneOpen)" Value="False"/>
                     </VisualState.Setters>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0"/>
-                    </VisualState.StateTriggers>
                 </VisualState>
                 <VisualState x:ConnectionId='4' x:Name="NormalState">
                     <VisualState.Setters>
                         <Setter Target="splitView.(SplitView.IsPaneOpen)" Value="False"/>
                     </VisualState.Setters>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="400"/>
-                    </VisualState.StateTriggers>
                 </VisualState>
                 <VisualState x:ConnectionId='5' x:Name="WideState">
                     <VisualState.Setters>
                         <Setter Target="paneButton.(ToggleButton.IsChecked)" Value="True"/>
                         <Setter Target="splitView.(SplitView.IsPaneOpen)" Value="True"/>
                     </VisualState.Setters>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1000"/>
-                    </VisualState.StateTriggers>
                 </VisualState>
 
             </VisualStateGroup>
@@ -67,7 +58,7 @@
 
         </Grid>
         <!--SplitView IsOpenPaneとDisplayModeで様々な画面に対応します-->
-        <SplitView x:ConnectionId='6' x:Name="splitView" DisplayMode="CompactOverlay" CompactPaneLength="48" OpenPaneLength="250" Grid.Row="1">
+        <SplitView x:ConnectionId='6' x:Name="splitView" DisplayMode="CompactInline" CompactPaneLength="48" OpenPaneLength="250" Grid.Row="1">
             <!--SplitViewのペイン部分-->
             <SplitView.Pane>
                 <Grid Background="{StaticResource SplitViewBackgroundBrush}">
@@ -90,15 +81,18 @@
                     </StackPanel>
                 </Grid>
             </SplitView.Pane>
-            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
                 <!--このFrameにいろいろなページをNavigateすることでページを切り替える-->
                 <Frame x:ConnectionId='10' x:Name="frameContent" MinWidth="800"></Frame>
             </ScrollViewer>
         </SplitView>
-
-        <CommandBar HorizontalAlignment="Right" Background="{x:Null}" Foreground="White" VerticalAlignment="Bottom">
-            <AppBarButton Icon="Upload" Label="Update" Foreground="White" Command="{Binding UpdateCortanaCommand}"/>
+        <CommandBar HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Top" Background="{x:Null}" Grid.RowSpan="2" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Upload" Label="Update" Foreground="White" Command="{Binding UpdateCortanaCommand}"/>
+            </CommandBar.PrimaryCommands>
         </CommandBar>
+        
     </Grid>
+    
 </Page>
 

@@ -6,14 +6,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Transitions>
+        <TransitionCollection>
+            <EntranceThemeTransition FromVerticalOffset="0" FromHorizontalOffset="-80" />
+        </TransitionCollection>
+    </Page.Transitions>
 
     <Grid Background="{StaticResource ApplicationThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="48"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <TextBox x:ConnectionId='8' x:Name="textBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="45" Width="724" Background="{x:Null}" FontSize="26.667" Foreground="White"/>
+            <TextBox x:ConnectionId='8' x:Name="textBox" Margin="10,0,0,0" TextWrapping="NoWrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Background="{x:Null}" FontSize="18" Foreground="White"/>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -22,12 +27,16 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0" Background="#4C000000">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="72"/>
+                    <RowDefinition Height="48"/>
+                    <RowDefinition Height="48"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock x:ConnectionId='2' x:Name="textBlock" Margin="10,0,0,0" TextWrapping="Wrap" Text="State List" VerticalAlignment="Top" Width="130" FontSize="24" HorizontalAlignment="Left" Foreground="White"/>
-                <TextBlock x:ConnectionId='3' x:Name="textBlock_Copy" Margin="10,30,0,-22" TextWrapping="Wrap" Text="CurrentState" VerticalAlignment="Top" Width="180" FontSize="24" HorizontalAlignment="Left" Foreground="White"/>
-                <ListBox x:ConnectionId='4' x:Name="listBoxState"  Grid.Row="1" Background="{x:Null}" ItemsSource="{Binding StateList}"                                                  ItemContainerStyle="{StaticResource ListBoxItemStyle}" CanDrag="True" >
+
+                <TextBlock x:ConnectionId='2' x:Name="textBlock" Margin="10,0,0,0" TextWrapping="Wrap" Text="State List" VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" Foreground="White" />
+                <TextBlock x:ConnectionId='3' x:Name="textBlock_Copy" Margin="10,0,0,0" TextWrapping="Wrap" Text="CurrentState" VerticalAlignment="Center" Width="180" FontSize="18" HorizontalAlignment="Left" Foreground="White" Grid.Row="1" Height="32"/>
+                <TextBox x:ConnectionId='4' x:Name="textBox1" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentStateNum,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Width="135"  Height="32" Margin="150,0,0,0"/>
+
+                <ListBox x:ConnectionId='5' x:Name="listBoxState"  Grid.Row="2" Background="{x:Null}" ItemsSource="{Binding StateList}"                                                  ItemContainerStyle="{StaticResource ListBoxItemStyle}" CanDrag="True" >
                     <ListBox.Transitions>
                         <TransitionCollection>
                             <AddDeleteThemeTransition/>
@@ -36,7 +45,7 @@
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid x:ConnectionId='6' Height="30"                               >
-                                <TextBlock Text="{Binding Name}" />
+                                <TextBlock Text="{Binding Name}" FontSize="18" />
                                 <FlyoutBase.AttachedFlyout>
                                     <MenuFlyout Placement="Bottom">
                                         <MenuFlyoutItem x:ConnectionId='7' x:Name="menuItemState" Text="削除"                             />
@@ -47,7 +56,7 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-                <CommandBar Grid.Row="1" VerticalAlignment="Bottom">
+                <CommandBar Grid.Row="2" VerticalAlignment="Bottom" Height="48">
                     <AppBarButton Icon="Add">
                         <AppBarButton.Flyout>
                             <MenuFlyout>
@@ -56,8 +65,7 @@
                         </AppBarButton.Flyout>
                     </AppBarButton>
                 </CommandBar>
-                <TextBox x:ConnectionId='5' x:Name="textBox1" HorizontalAlignment="Left" Margin="195,32,0,0" TextWrapping="Wrap" Text="{Binding CurrentStateNum,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="135"/>
-
+                
             </Grid>
             <Frame x:ConnectionId='1' x:Name="frameState" Grid.Column="1"></Frame>
         </Grid>

@@ -2,6 +2,7 @@
 using CortanaCommand.View.Pages;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -9,6 +10,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,25 +23,47 @@ namespace CortanaCommand
 {
     public sealed partial class MainPage : Page
     {
+        
         public MainPage()
         {
             this.InitializeComponent();
 
-            //バックボタンをフックする
-            SystemNavigationManager.GetForCurrentView().BackRequested += MainPage_BackRequested;
-
+            
             //アプリのライフサイクルをフック
             App.Current.Resuming += Current_Resuming;
             App.Current.Suspending += Current_Suspending;
+            App.OnChangeAppState += (state) =>
+            {
+                switch (state)
+                {
+                    case AppState.Mobile:
+                        VisualStateManager.GoToState(this,"MobileState",true);
+                        break;
+                    case AppState.Normal:
+                        VisualStateManager.GoToState(this, "NormalState", true);
+                        break;
+                    case AppState.Wide:
+                        VisualStateManager.GoToState(this, "WideState", true);
+                        break;
+                }
+            };
 
             this.DataContext = App.ViewModel;
+            
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            
         }
 
         //ページが読み込まれた時
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             //HomePageにNavigateする
-            frameContent.Navigate(typeof(HomePage));
+            
+            frameContent.Navigate( typeof(HomePage), null);
         }
 
         //検索ボックスで検索しようとしたとき
@@ -51,20 +75,29 @@ namespace CortanaCommand
         //SplitViewのPaneに作ったナビゲーションボタンをおした時、各Pageに移動
         private void appButtonSetting_Click(object sender, RoutedEventArgs e)
         {
-            frameContent.Navigate(typeof(SettingPage));
-            splitView.IsPaneOpen = false;
+            frameContent.Navigate( typeof(SettingPage), null);
+            if (App.StateManager.CurrentState != AppState.Wide)
+            {
+                splitView.IsPaneOpen = false;
+            }
         }
 
         private void appButtonHome_Click(object sender, RoutedEventArgs e)
         {
-            frameContent.Navigate(typeof(HomePage));
-            splitView.IsPaneOpen = false;
+            frameContent.Navigate( typeof(HomePage), null);
+            if (App.StateManager.CurrentState != AppState.Wide)
+            {
+                splitView.IsPaneOpen = false;
+            }
         }
 
         private void appButtonFavorite_Click(object sender, RoutedEventArgs e)
         {
-            frameContent.Navigate(typeof(CurrentXmlPage));
-            splitView.IsPaneOpen = false;
+            frameContent.Navigate( typeof(CurrentXmlPage), null);
+            if (App.StateManager.CurrentState != AppState.Wide)
+            {
+                splitView.IsPaneOpen = false;
+            }
         }
 
         //アプリが一時停止しようとしたとき
@@ -87,16 +120,6 @@ namespace CortanaCommand
                 var data = ApplicationData.Current.LocalSettings.Values["MyData"];
             }
             */
-        }
-
-        //バックボタンが押された時
-        private void MainPage_BackRequested(object sender, BackRequestedEventArgs e)
-        {
-            if (frameContent.CanGoBack)
-            {
-                e.Handled = true;
-                frameContent.GoBack();
-            }
         }
 
     }

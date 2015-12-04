@@ -29,6 +29,7 @@ namespace CortanaCommandServer
             {
                 App.ViewModel.StopServerCommand.Execute(null);
             };
+            
         }
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -31,13 +33,14 @@ namespace CortanaCommand
 
             this.DataContext = App.ViewModel;
             this._viewModel = App.ViewModel;
+            
         }
 
         private void listBox_command_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if(listBox_command.SelectedIndex != -1)
             {
-                this.frameCommand.Navigate(typeof(CommandPage),listBox_command.SelectedItem);
+                App.NavigateFrame(frameCommand,typeof(CommandPage),listBox_command.SelectedItem);
             }
         }
 

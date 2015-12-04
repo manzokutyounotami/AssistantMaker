@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="CurrentStateNum" />
     <RootPropertyPathName Name="AddSuccessStateCommand" />
     <RootPropertyPathName Name="StateList" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="CurrentStateNum" />
     <RootPropertyPathName Name="CurrentXml" />
     <RootPropertyPathName Name="AddCommandCommand" />
     <RootPropertyPathName Name="CommandList" />
@@ -67,6 +67,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem" />
     <RootType FullName="Windows.UI.Color" />
+    <RootType FullName="System.Double" />
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
@@ -92,6 +93,8 @@
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
@@ -128,7 +131,6 @@
     <RootType FullName="Windows.UI.Xaml.VisualState">
       <RootProperty Name="Storyboard" />
       <RootProperty Name="Setters" />
-      <RootProperty Name="StateTriggers" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
       <RootProperty Name="Children" />
@@ -174,22 +176,42 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="Content" />
       <RootProperty Name="Transitions" />
+      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
       <RootEvent Name="Loaded" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition">
+      <RootProperty Name="FromVerticalOffset" />
+      <RootProperty Name="FromHorizontalOffset" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="AcceptsReturn" />
+      <RootProperty Name="IsReadOnly" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="Background" />
@@ -205,31 +227,11 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="PrimaryCommands" />
-      <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Background" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="AcceptsReturn" />
-      <RootProperty Name="IsReadOnly" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="ElementName" />
-      <RootProperty Name="Path" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyout">
       <RootProperty Name="Items" />
@@ -240,8 +242,13 @@
       <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+    </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.AddDeleteThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
@@ -251,10 +258,14 @@
       <RootMethod Name="SetAttachedFlyout" />
     </RootType>
     <RootType FullName="CortanaCommand.View.Pages.CommandPage" />
-    <RootType FullName="CortanaCommand.View.Pages.CurrentXmlPage" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition">
-      <RootProperty Name="FromVerticalOffset" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
     </RootType>
+    <RootType FullName="CortanaCommand.View.Pages.CurrentXmlPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Items" />
     </RootType>
@@ -271,19 +282,11 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.CubicEase">
       <RootProperty Name="EasingMode" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
-      <RootProperty Name="MinWindowWidth" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
       <RootProperty Name="DisplayMode" />
       <RootProperty Name="CompactPaneLength" />
       <RootProperty Name="OpenPaneLength" />
       <RootProperty Name="Pane" />
-      <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="VerticalScrollBarVisibility" />
-      <RootProperty Name="HorizontalScrollBarVisibility" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">

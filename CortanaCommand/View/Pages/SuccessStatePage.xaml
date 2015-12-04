@@ -6,27 +6,33 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Transitions>
+        <TransitionCollection>
+            <EntranceThemeTransition FromVerticalOffset="0" FromHorizontalOffset="-80" />
+        </TransitionCollection>
+    </Page.Transitions>
 
     <Grid Background="{StaticResource ApplicationThemeBrush}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="257" Background="{x:Null}" Foreground="White"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" x:Name="textBox" Margin="10,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Background="{x:Null}" Foreground="White" FontSize="18" />
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Grid.Column="0" Margin="20,10,20,0" Grid.Row="1">
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ListenFor" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBox Text="{Binding ListenFor,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="111" />
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Example" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBox Text="{Binding Example,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FeedBack" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBox Text="{Binding FeedBack,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Utterance" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBox Text="{Binding Utterance,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Script" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBox Text="{Binding Script,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="280" />
+            </StackPanel>
+        </ScrollViewer>
         
-        <StackPanel Grid.Column="0" Margin="0,80,0,0">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ListenFor" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
-            <TextBox Text="{Binding ListenFor,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="111" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Example" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
-            <TextBox Text="{Binding Example,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FeedBack" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
-            <TextBox Text="{Binding FeedBack,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
-        </StackPanel>
-        <StackPanel Grid.Column="1" Margin="0,80,0,0">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Utterance" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
-            <TextBox Text="{Binding Utterance,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Script" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
-            <TextBox Text="{Binding Script,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="280" />
-        </StackPanel>
     </Grid>
 </Page>

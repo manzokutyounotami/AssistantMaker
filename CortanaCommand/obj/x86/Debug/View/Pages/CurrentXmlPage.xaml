@@ -13,8 +13,9 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock x:ConnectionId='1' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="現在の登録済みXML" VerticalAlignment="Top"/>
-        <TextBox x:ConnectionId='2' x:Name="textBox" Margin="50" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentXml}" AcceptsReturn="True" IsReadOnly="True"/>
-
+        <ScrollViewer HorizontalScrollMode="Auto" VerticalScrollMode="Auto" Grid.Row="1">
+            <TextBox x:ConnectionId='2' x:Name="textBox" Margin="20"  TextWrapping="Wrap" Text="{Binding CurrentXml}" AcceptsReturn="True" IsReadOnly="True"/>
+        </ScrollViewer>
     </Grid>
 </Page>
 

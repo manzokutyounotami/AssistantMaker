@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-MBUAA15</Machine>
+    <Machine>GARIDUO</Machine>
     <WindowsUser>garic</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>44a5453b-2e98-4da4-9078-a708a7a7c2af</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>B8952E5ECD7EAA48766C7C4F39FE8C366F0267086394FD72AC7F20DF422F80ED</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>2B1BA4B3F0FDB6A30ED74D78350EB477EBA7B9049B1B7324A6E0328EA4A769D9</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>44a5453b-2e98-4da4-9078-a708a7a7c2af_1.0.0.0_x86__nyzkzmv40p520</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>44a5453b-2e98-4da4-9078-a708a7a7c2af_nyzkzmv40p520!App</RegisteredUserModeAppID>
     <RegisteredPackageID>44a5453b-2e98-4da4-9078-a708a7a7c2af</RegisteredPackageID>
@@ -22,785 +22,746 @@
     <AppXManifest Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:12:18.497</Modified>
+      <Modified>2015-12-04T22:21:05.445</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
-      <Modified>2015-11-27T11:31:32.872</Modified>
+      <Modified>2015-12-04T16:29:25.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.898</Modified>
+      <Modified>2015-12-04T16:29:25.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.902</Modified>
+      <Modified>2015-12-04T16:29:25.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\BadgeLogo.scale-125.png">
       <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.907</Modified>
+      <Modified>2015-12-04T16:29:25.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\BadgeLogo.scale-150.png">
       <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.912</Modified>
+      <Modified>2015-12-04T16:29:25.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\BadgeLogo.scale-200.png">
       <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.916</Modified>
+      <Modified>2015-12-04T16:29:25.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\BadgeLogo.scale-400.png">
       <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.920</Modified>
+      <Modified>2015-12-04T16:29:25.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-100.png">
       <PackagePath>Assets\LockScreenLogo.scale-100.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.924</Modified>
+      <Modified>2015-12-04T16:29:25.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-125.png">
       <PackagePath>Assets\LockScreenLogo.scale-125.png</PackagePath>
-      <Modified>2015-11-27T18:07:53.496</Modified>
+      <Modified>2015-12-04T16:29:25.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-150.png">
       <PackagePath>Assets\LockScreenLogo.scale-150.png</PackagePath>
-      <Modified>2015-11-27T18:07:53.499</Modified>
+      <Modified>2015-12-04T16:29:25.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.527</Modified>
+      <Modified>2015-12-04T16:29:25.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-400.png">
       <PackagePath>Assets\LockScreenLogo.scale-400.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.533</Modified>
+      <Modified>2015-12-04T16:29:25.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Slide.xml">
       <PackagePath>Assets\Slide.xml</PackagePath>
-      <Modified>2015-11-27T11:34:36.836</Modified>
+      <Modified>2015-12-04T16:29:25.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.548</Modified>
+      <Modified>2015-12-04T16:29:25.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.553</Modified>
+      <Modified>2015-12-04T16:29:25.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.557</Modified>
+      <Modified>2015-12-04T16:29:25.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.562</Modified>
+      <Modified>2015-12-04T16:29:25.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.574</Modified>
+      <Modified>2015-12-04T16:29:25.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.781</Modified>
+      <Modified>2015-12-04T16:29:25.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.786</Modified>
+      <Modified>2015-12-04T16:29:25.249</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.790</Modified>
+      <Modified>2015-12-04T16:29:25.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.795</Modified>
+      <Modified>2015-12-04T16:29:25.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.808</Modified>
+      <Modified>2015-12-04T16:29:25.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.812</Modified>
+      <Modified>2015-12-04T16:29:25.254</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-125.png">
       <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.817</Modified>
+      <Modified>2015-12-04T16:29:25.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-150.png">
       <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.821</Modified>
+      <Modified>2015-12-04T16:29:25.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-200.png">
       <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.825</Modified>
+      <Modified>2015-12-04T16:29:25.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-400.png">
       <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.830</Modified>
+      <Modified>2015-12-04T16:29:25.263</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.696</Modified>
+      <Modified>2015-12-04T16:29:25.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.701</Modified>
+      <Modified>2015-12-04T16:29:25.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.706</Modified>
+      <Modified>2015-12-04T16:29:25.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.710</Modified>
+      <Modified>2015-12-04T16:29:25.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.718</Modified>
+      <Modified>2015-12-04T16:29:25.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.725</Modified>
+      <Modified>2015-12-04T16:29:25.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.737</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-28T11:19:36.000</Modified>
+      <Modified>2015-12-04T16:29:25.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.755</Modified>
+      <Modified>2015-12-04T16:29:25.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.746</Modified>
+      <Modified>2015-12-04T16:29:25.271</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-100.png">
       <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.760</Modified>
+      <Modified>2015-12-04T16:29:25.271</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-125.png">
       <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.764</Modified>
+      <Modified>2015-12-04T16:29:25.272</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-150.png">
       <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.769</Modified>
+      <Modified>2015-12-04T16:29:25.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-200.png">
       <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.773</Modified>
+      <Modified>2015-12-04T16:29:25.274</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-400.png">
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
-      <Modified>2015-11-27T18:07:55.777</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-28T11:19:36.000</Modified>
+      <Modified>2015-12-04T16:29:25.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.842</Modified>
+      <Modified>2015-12-04T16:29:25.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.850</Modified>
+      <Modified>2015-12-04T16:29:25.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.854</Modified>
+      <Modified>2015-12-04T16:29:25.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.858</Modified>
+      <Modified>2015-12-04T16:29:25.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.862</Modified>
+      <Modified>2015-12-04T16:29:25.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.867</Modified>
+      <Modified>2015-12-04T16:29:25.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.871</Modified>
+      <Modified>2015-12-04T16:29:25.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.876</Modified>
+      <Modified>2015-12-04T16:29:25.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.881</Modified>
+      <Modified>2015-12-04T16:29:25.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-27T18:07:55.888</Modified>
+      <Modified>2015-12-04T16:29:25.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
-      <Modified>2015-11-27T13:04:40.992</Modified>
+      <Modified>2015-07-30T07:45:50.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommand.exe">
       <PackagePath>CortanaCommand.exe</PackagePath>
-      <Modified>2015-11-27T18:12:18.494</Modified>
+      <Modified>2015-12-04T22:21:05.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommand.xr.xml">
       <PackagePath>CortanaCommand.xr.xml</PackagePath>
-      <Modified>2015-11-27T12:51:21.960</Modified>
+      <Modified>2015-12-04T22:06:14.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommandCore.dll">
       <PackagePath>CortanaCommandCore.dll</PackagePath>
-      <Modified>2015-11-27T17:46:44.886</Modified>
+      <Modified>2015-12-04T18:12:40.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommandService.winmd">
       <PackagePath>CortanaCommandService.winmd</PackagePath>
-      <Modified>2015-11-27T17:46:46.413</Modified>
+      <Modified>2015-12-04T18:12:42.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\entrypoint\CortanaCommand.exe">
       <PackagePath>entrypoint\CortanaCommand.exe</PackagePath>
-      <Modified>2015-11-27T18:12:14.409</Modified>
+      <Modified>2015-12-04T22:21:04.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
-      <Modified>2015-11-27T13:04:11.540</Modified>
+      <Modified>2015-10-29T20:25:54.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\GalaSoft.MvvmLight.Extras.dll">
       <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
-      <Modified>2015-11-27T13:04:11.555</Modified>
+      <Modified>2015-10-29T20:25:54.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\GalaSoft.MvvmLight.Platform.dll">
       <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
-      <Modified>2015-11-27T13:04:11.587</Modified>
+      <Modified>2015-10-29T20:25:54.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.876</Modified>
+      <Modified>2015-07-30T07:45:40.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
-      <Modified>2015-11-27T13:04:24.700</Modified>
+      <Modified>2015-07-30T07:45:40.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Microsoft.ApplicationInsights.PersistenceChannel.dll">
       <PackagePath>Microsoft.ApplicationInsights.PersistenceChannel.dll</PackagePath>
-      <Modified>2015-11-27T13:04:24.808</Modified>
+      <Modified>2015-07-30T07:45:40.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.318</Modified>
+      <Modified>2015-07-30T07:45:45.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
-      <Modified>2015-11-27T13:04:10.336</Modified>
+      <Modified>2015-08-22T23:46:19.024</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
-      <Modified>2015-11-27T13:04:32.425</Modified>
+      <Modified>2015-07-30T07:45:44.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.444</Modified>
+      <Modified>2015-07-30T07:45:42.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.097</Modified>
+      <Modified>2015-08-23T08:03:40.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2015-11-27T11:31:24.950</Modified>
+      <Modified>2015-12-04T16:29:25.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-27T18:12:15.679</Modified>
+      <Modified>2015-12-04T22:09:52.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.776</Modified>
+      <Modified>2015-07-30T07:45:44.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Collections.Concurrent.dll">
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.150</Modified>
+      <Modified>2015-07-30T07:45:44.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.755</Modified>
+      <Modified>2015-07-30T07:45:44.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.604</Modified>
+      <Modified>2015-07-30T07:45:44.820</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Collections.NonGeneric.dll">
       <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
-      <Modified>2015-11-27T13:04:31.113</Modified>
+      <Modified>2015-07-30T07:45:49.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Collections.Specialized.dll">
       <PackagePath>System.Collections.Specialized.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.923</Modified>
+      <Modified>2015-07-30T07:45:44.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ComponentModel.Annotations.dll">
       <PackagePath>System.ComponentModel.Annotations.dll</PackagePath>
-      <Modified>2015-11-27T13:04:28.121</Modified>
+      <Modified>2015-07-30T07:45:45.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.360</Modified>
+      <Modified>2015-07-30T07:45:42.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ComponentModel.dll">
       <PackagePath>System.ComponentModel.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.791</Modified>
+      <Modified>2015-07-30T07:45:45.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ComponentModel.EventBasedAsync.dll">
       <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.297</Modified>
+      <Modified>2015-07-30T07:45:42.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Core.dll">
       <PackagePath>System.Core.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.385</Modified>
+      <Modified>2015-07-30T07:45:42.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Data.Common.dll">
       <PackagePath>System.Data.Common.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.992</Modified>
+      <Modified>2015-07-30T07:45:42.223</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Diagnostics.Contracts.dll">
       <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.123</Modified>
+      <Modified>2015-07-30T07:45:42.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.628</Modified>
+      <Modified>2015-07-30T07:45:45.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Diagnostics.StackTrace.dll">
       <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.028</Modified>
+      <Modified>2015-07-30T07:45:42.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Diagnostics.Tools.dll">
       <PackagePath>System.Diagnostics.Tools.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.884</Modified>
+      <Modified>2015-07-30T07:45:45.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Diagnostics.Tracing.dll">
       <PackagePath>System.Diagnostics.Tracing.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.351</Modified>
+      <Modified>2015-07-30T07:45:45.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.dll">
       <PackagePath>System.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.404</Modified>
+      <Modified>2015-07-30T07:45:42.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Dynamic.Runtime.dll">
       <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.693</Modified>
+      <Modified>2015-07-30T07:45:45.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Globalization.Calendars.dll">
       <PackagePath>System.Globalization.Calendars.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.785</Modified>
+      <Modified>2015-07-30T07:45:45.856</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Globalization.dll">
       <PackagePath>System.Globalization.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.339</Modified>
+      <Modified>2015-07-30T07:45:46.029</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Globalization.Extensions.dll">
       <PackagePath>System.Globalization.Extensions.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.517</Modified>
+      <Modified>2015-07-30T07:45:45.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.IO.Compression.dll">
       <PackagePath>System.IO.Compression.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.230</Modified>
+      <Modified>2015-07-30T07:45:46.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.IO.Compression.ZipFile.dll">
       <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.077</Modified>
+      <Modified>2015-07-30T07:45:45.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.IO.dll">
       <PackagePath>System.IO.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.293</Modified>
+      <Modified>2015-07-30T07:45:45.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.IO.FileSystem.dll">
       <PackagePath>System.IO.FileSystem.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.137</Modified>
+      <Modified>2015-07-30T07:45:45.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.IO.FileSystem.Primitives.dll">
       <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.605</Modified>
+      <Modified>2015-07-30T07:45:46.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.IO.IsolatedStorage.dll">
       <PackagePath>System.IO.IsolatedStorage.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.346</Modified>
+      <Modified>2015-07-30T07:45:42.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.IO.UnmanagedMemoryStream.dll">
       <PackagePath>System.IO.UnmanagedMemoryStream.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.473</Modified>
+      <Modified>2015-07-30T07:45:46.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Linq.dll">
       <PackagePath>System.Linq.dll</PackagePath>
-      <Modified>2015-11-27T13:04:31.260</Modified>
+      <Modified>2015-07-30T07:45:46.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Linq.Expressions.dll">
       <PackagePath>System.Linq.Expressions.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.514</Modified>
+      <Modified>2015-07-30T07:45:46.923</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Linq.Parallel.dll">
       <PackagePath>System.Linq.Parallel.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.361</Modified>
+      <Modified>2015-07-30T07:45:46.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Linq.Queryable.dll">
       <PackagePath>System.Linq.Queryable.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.159</Modified>
+      <Modified>2015-07-30T07:45:47.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Net.dll">
       <PackagePath>System.Net.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.421</Modified>
+      <Modified>2015-07-30T07:45:42.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
-      <Modified>2015-11-27T13:04:32.194</Modified>
+      <Modified>2015-07-30T07:45:46.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Net.Http.Rtc.dll">
       <PackagePath>System.Net.Http.Rtc.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.837</Modified>
+      <Modified>2015-07-30T07:45:43.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Net.NetworkInformation.dll">
       <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
-      <Modified>2015-11-27T13:04:31.937</Modified>
+      <Modified>2015-07-30T07:45:46.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Net.Primitives.dll">
       <PackagePath>System.Net.Primitives.dll</PackagePath>
-      <Modified>2015-11-27T13:04:32.197</Modified>
+      <Modified>2015-07-30T07:45:46.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Net.Requests.dll">
       <PackagePath>System.Net.Requests.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.144</Modified>
+      <Modified>2015-07-30T07:45:43.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Net.Sockets.dll">
       <PackagePath>System.Net.Sockets.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.492</Modified>
+      <Modified>2015-07-30T07:45:42.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Net.WebHeaderCollection.dll">
       <PackagePath>System.Net.WebHeaderCollection.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.034</Modified>
+      <Modified>2015-07-30T07:45:42.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Numerics.dll">
       <PackagePath>System.Numerics.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.439</Modified>
+      <Modified>2015-07-30T07:45:42.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Numerics.Vectors.dll">
       <PackagePath>System.Numerics.Vectors.dll</PackagePath>
-      <Modified>2015-11-27T13:04:28.104</Modified>
+      <Modified>2015-07-30T07:45:46.787</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Numerics.Vectors.WindowsRuntime.dll">
       <PackagePath>System.Numerics.Vectors.WindowsRuntime.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.066</Modified>
+      <Modified>2015-07-30T07:45:42.852</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ObjectModel.dll">
       <PackagePath>System.ObjectModel.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.366</Modified>
+      <Modified>2015-07-30T07:45:46.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
-      <Modified>2015-11-27T13:04:28.423</Modified>
+      <Modified>2015-07-30T07:45:43.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Private.Networking.dll">
       <PackagePath>System.Private.Networking.dll</PackagePath>
-      <Modified>2015-11-27T13:04:31.050</Modified>
+      <Modified>2015-07-30T07:45:46.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Private.ServiceModel.dll">
       <PackagePath>System.Private.ServiceModel.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.696</Modified>
+      <Modified>2015-07-30T07:45:43.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
-      <Modified>2015-11-27T13:04:24.868</Modified>
+      <Modified>2015-07-30T07:45:42.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.Context.dll">
       <PackagePath>System.Reflection.Context.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.650</Modified>
+      <Modified>2015-07-30T07:45:42.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.DispatchProxy.dll">
       <PackagePath>System.Reflection.DispatchProxy.dll</PackagePath>
-      <Modified>2015-11-27T13:04:28.102</Modified>
+      <Modified>2015-07-30T07:45:47.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.dll">
       <PackagePath>System.Reflection.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.404</Modified>
+      <Modified>2015-07-30T07:45:46.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.Emit.dll">
       <PackagePath>System.Reflection.Emit.dll</PackagePath>
-      <Modified>2015-11-27T13:04:41.123</Modified>
+      <Modified>2015-07-30T07:45:51.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.Emit.ILGeneration.dll">
       <PackagePath>System.Reflection.Emit.ILGeneration.dll</PackagePath>
-      <Modified>2015-11-27T13:04:41.139</Modified>
+      <Modified>2015-07-30T07:45:51.164</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.Emit.Lightweight.dll">
       <PackagePath>System.Reflection.Emit.Lightweight.dll</PackagePath>
-      <Modified>2015-11-27T13:04:40.992</Modified>
+      <Modified>2015-07-30T07:45:51.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.Extensions.dll">
       <PackagePath>System.Reflection.Extensions.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.567</Modified>
+      <Modified>2015-07-30T07:45:47.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.Metadata.dll">
       <PackagePath>System.Reflection.Metadata.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.349</Modified>
+      <Modified>2015-07-30T07:45:47.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.Primitives.dll">
       <PackagePath>System.Reflection.Primitives.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.200</Modified>
+      <Modified>2015-07-30T07:45:47.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Reflection.TypeExtensions.dll">
       <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.072</Modified>
+      <Modified>2015-07-30T07:45:47.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Resources.ResourceManager.dll">
       <PackagePath>System.Resources.ResourceManager.dll</PackagePath>
-      <Modified>2015-11-27T13:04:31.008</Modified>
+      <Modified>2015-07-30T07:45:47.738</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.388</Modified>
+      <Modified>2015-07-30T07:45:48.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.Extensions.dll">
       <PackagePath>System.Runtime.Extensions.dll</PackagePath>
-      <Modified>2015-11-27T13:04:32.154</Modified>
+      <Modified>2015-07-30T07:45:48.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.Handles.dll">
       <PackagePath>System.Runtime.Handles.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.361</Modified>
+      <Modified>2015-07-30T07:45:47.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.InteropServices.dll">
       <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.062</Modified>
+      <Modified>2015-07-30T07:45:48.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.InteropServices.WindowsRuntime.dll">
       <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.319</Modified>
+      <Modified>2015-07-30T07:45:43.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.Numerics.dll">
       <PackagePath>System.Runtime.Numerics.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.611</Modified>
+      <Modified>2015-07-30T07:45:48.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.Serialization.dll">
       <PackagePath>System.Runtime.Serialization.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.460</Modified>
+      <Modified>2015-07-30T07:45:42.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.Serialization.Json.dll">
       <PackagePath>System.Runtime.Serialization.Json.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.760</Modified>
+      <Modified>2015-07-30T07:45:43.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.Serialization.Primitives.dll">
       <PackagePath>System.Runtime.Serialization.Primitives.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.350</Modified>
+      <Modified>2015-07-30T07:45:43.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.Serialization.Xml.dll">
       <PackagePath>System.Runtime.Serialization.Xml.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.992</Modified>
+      <Modified>2015-07-30T07:45:43.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.dll">
       <PackagePath>System.Runtime.WindowsRuntime.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.526</Modified>
+      <Modified>2015-07-30T07:45:43.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.UI.Xaml.dll">
       <PackagePath>System.Runtime.WindowsRuntime.UI.Xaml.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.691</Modified>
+      <Modified>2015-07-30T07:45:43.773</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Security.Claims.dll">
       <PackagePath>System.Security.Claims.dll</PackagePath>
-      <Modified>2015-11-27T13:04:31.122</Modified>
+      <Modified>2015-07-30T07:45:48.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Security.Principal.dll">
       <PackagePath>System.Security.Principal.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.285</Modified>
+      <Modified>2015-07-30T07:45:48.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ServiceModel.dll">
       <PackagePath>System.ServiceModel.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.479</Modified>
+      <Modified>2015-07-30T07:45:42.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ServiceModel.Duplex.dll">
       <PackagePath>System.ServiceModel.Duplex.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.387</Modified>
+      <Modified>2015-07-30T07:45:44.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ServiceModel.Http.dll">
       <PackagePath>System.ServiceModel.Http.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.921</Modified>
+      <Modified>2015-07-30T07:45:44.169</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ServiceModel.NetTcp.dll">
       <PackagePath>System.ServiceModel.NetTcp.dll</PackagePath>
-      <Modified>2015-11-27T13:04:26.175</Modified>
+      <Modified>2015-07-30T07:45:44.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ServiceModel.Primitives.dll">
       <PackagePath>System.ServiceModel.Primitives.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.423</Modified>
+      <Modified>2015-07-30T07:45:44.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ServiceModel.Security.dll">
       <PackagePath>System.ServiceModel.Security.dll</PackagePath>
-      <Modified>2015-11-27T13:04:25.328</Modified>
+      <Modified>2015-07-30T07:45:44.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.ServiceModel.Web.dll">
       <PackagePath>System.ServiceModel.Web.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.498</Modified>
+      <Modified>2015-07-30T07:45:42.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Text.Encoding.CodePages.dll">
       <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
-      <Modified>2015-11-27T13:04:28.316</Modified>
+      <Modified>2015-07-30T07:45:44.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Text.Encoding.dll">
       <PackagePath>System.Text.Encoding.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.761</Modified>
+      <Modified>2015-07-30T07:45:48.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Text.Encoding.Extensions.dll">
       <PackagePath>System.Text.Encoding.Extensions.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.861</Modified>
+      <Modified>2015-07-30T07:45:48.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Text.RegularExpressions.dll">
       <PackagePath>System.Text.RegularExpressions.dll</PackagePath>
-      <Modified>2015-11-27T13:04:29.605</Modified>
+      <Modified>2015-07-30T07:45:48.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Threading.dll">
       <PackagePath>System.Threading.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.165</Modified>
+      <Modified>2015-07-30T07:45:48.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Threading.Overlapped.dll">
       <PackagePath>System.Threading.Overlapped.dll</PackagePath>
-      <Modified>2015-11-27T13:04:24.667</Modified>
+      <Modified>2015-07-30T07:45:42.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Threading.Tasks.Dataflow.dll">
       <PackagePath>System.Threading.Tasks.Dataflow.dll</PackagePath>
-      <Modified>2015-11-27T13:04:32.141</Modified>
+      <Modified>2015-07-30T07:45:48.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Threading.Tasks.dll">
       <PackagePath>System.Threading.Tasks.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.036</Modified>
+      <Modified>2015-07-30T07:45:48.479</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Threading.Tasks.Parallel.dll">
       <PackagePath>System.Threading.Tasks.Parallel.dll</PackagePath>
-      <Modified>2015-11-27T13:04:31.122</Modified>
+      <Modified>2015-07-30T07:45:49.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Threading.Timer.dll">
       <PackagePath>System.Threading.Timer.dll</PackagePath>
-      <Modified>2015-11-27T13:04:30.227</Modified>
+      <Modified>2015-07-30T07:45:48.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Windows.dll">
       <PackagePath>System.Windows.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.519</Modified>
+      <Modified>2015-07-30T07:45:43.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Xml.dll">
       <PackagePath>System.Xml.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.536</Modified>
+      <Modified>2015-07-30T07:45:43.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Xml.Linq.dll">
       <PackagePath>System.Xml.Linq.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.555</Modified>
+      <Modified>2015-07-30T07:45:43.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Xml.ReaderWriter.dll">
       <PackagePath>System.Xml.ReaderWriter.dll</PackagePath>
-      <Modified>2015-11-27T13:04:33.053</Modified>
+      <Modified>2015-07-30T07:45:48.892</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Xml.Serialization.dll">
       <PackagePath>System.Xml.Serialization.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.574</Modified>
+      <Modified>2015-07-30T07:45:43.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Xml.XDocument.dll">
       <PackagePath>System.Xml.XDocument.dll</PackagePath>
-      <Modified>2015-11-27T13:04:32.140</Modified>
+      <Modified>2015-07-30T07:45:49.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Xml.XmlDocument.dll">
       <PackagePath>System.Xml.XmlDocument.dll</PackagePath>
-      <Modified>2015-11-27T13:04:24.984</Modified>
+      <Modified>2015-07-30T07:45:42.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
-      <Modified>2015-11-27T13:04:27.444</Modified>
+      <Modified>2015-07-30T07:45:44.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2015-11-27T11:32:45.203</Modified>
+      <Modified>2015-10-26T02:54:00.794</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
       <Name>Microsoft.NET.CoreRuntime.1.0</Name>
-      <Version>1.0.23302.0</Version>
+      <Version>1.0.23117.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23302.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23117.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
       <Name>Microsoft.NET.CoreRuntime.1.0</Name>
-      <Version>1.0.23302.0</Version>
+      <Version>1.0.23117.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23302.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23117.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x64\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
       <Name>Microsoft.NET.CoreRuntime.1.0</Name>
-      <Version>1.0.23302.0</Version>
+      <Version>1.0.23117.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23302.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23117.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x86\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.22929.0</Version>
+      <Version>14.0.23019.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23019.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.22929.0</Version>
+      <Version>14.0.23019.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23019.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.22929.0</Version>
+      <Version>14.0.23019.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23019.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

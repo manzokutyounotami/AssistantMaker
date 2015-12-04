@@ -13,6 +13,7 @@ using Windows.ApplicationModel.VoiceCommands;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -31,6 +32,30 @@ namespace CortanaCommand
     sealed partial class App : Application
     {
         public static MainViewModel ViewModel;
+
+        public static Frame RootFrame
+        {
+            get { return Window.Current.Content as Frame; }
+            set { Window.Current.Content = value; }
+        }
+
+        public static AppStateManager StateManager { get; set; }
+        public static event Action<AppState> OnChangeAppState;
+
+        public static void NavigateFrame(Frame frameIfNoMobileMode, Type pageType, object param)
+        {
+            switch (StateManager.CurrentState)
+            {
+                case AppState.Mobile:
+                    RootFrame.Navigate(pageType, param);
+                    break;
+                case AppState.Normal:
+                case AppState.Wide:
+                    frameIfNoMobileMode.Navigate(pageType, param);
+                    break;
+            }
+        }
+
         /// <summary>
         /// 単一アプリケーション オブジェクトを初期化します。これは、実行される作成したコードの
         ///最初の行であるため、main() または WinMain() と論理的に等価です。
@@ -43,6 +68,10 @@ namespace CortanaCommand
             this.InitializeComponent();
             this.Suspending += OnSuspending;
             this.Resuming += OnResuming;
+            StateManager = new AppStateManager();
+            StateManager.StateList.Add(AppState.Mobile, 0);
+            StateManager.StateList.Add(AppState.Normal, 400);
+            StateManager.StateList.Add(AppState.Wide, 1200);
             
             ViewModel = new MainViewModel();
             var vm = DataLoadAsync().Result;
@@ -50,9 +79,10 @@ namespace CortanaCommand
             {
                 ViewModel = vm;
             }
-            ViewModel.OnRegisterVoiceCommand += async(xml) =>
+            ViewModel.OnRegisterVoiceCommand += async (xml) =>
             {
-                try {
+                try
+                {
                     var folder = ApplicationData.Current.LocalFolder;
                     var file = await folder.CreateFileAsync("VoiceCommandFile", CreationCollisionOption.ReplaceExisting);
                     await FileIO.WriteTextAsync(file, xml);
@@ -63,10 +93,14 @@ namespace CortanaCommand
                 }
                 catch (Exception e)
                 {
-                    var dialog = new MessageDialog(e.Message,"Cortanaの更新に失敗しました");
+                    var dialog = new MessageDialog(e.Message, "Cortanaの更新に失敗しました");
                     await dialog.ShowAsync();
                 }
             };
+            OnChangeAppState += (s) => { };
+
+            
+
         }
 
         
@@ -113,13 +147,48 @@ namespace CortanaCommand
                 //構成します
                 //var appView = ApplicationView.GetForCurrentView();
                 //appView.TitleBar.BackgroundColor = (Resources["ApplicationThemeBrush"] as SolidColorBrush).Color;
+                ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(340, 400));
+                Window.Current.SizeChanged += (s, ex) =>
+                {
+                    OnWindowSizeChanged(ex.Size);
+                };
+                SystemNavigationManager.GetForCurrentView().BackRequested += (s, ex) =>
+                {
+                    if (RootFrame.CanGoBack)
+                    {
+                        ex.Handled = true;
+                        RootFrame.GoBack();
+                    }
+                };
 
                 rootFrame.Navigate(typeof(MainPage), e.Arguments);
+
+                OnWindowSizeChanged(new Size(Window.Current.Bounds.Width,Window.Current.Bounds.Height));
+                
             }
             // 現在のウィンドウがアクティブであることを確認します
             Window.Current.Activate();
 
 
+        }
+
+        private void OnWindowSizeChanged(Size newSize)
+        {
+            bool isChange = StateManager.TryChangeState(newSize.Width);
+            if (isChange)
+            {
+                switch (StateManager.CurrentState)
+                {
+                    case AppState.Mobile:
+                        SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+                        break;
+                    case AppState.Normal:
+                    case AppState.Wide:
+                        SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+                        break;
+                }
+                OnChangeAppState(StateManager.CurrentState);
+            }
         }
 
         /// <summary>

@@ -8,7 +8,7 @@
     mc:Ignorable="d">
     <Page.Transitions>
         <TransitionCollection>
-            <EntranceThemeTransition FromVerticalOffset="40" />
+            <EntranceThemeTransition FromVerticalOffset="0" FromHorizontalOffset="-80" />
         </TransitionCollection>
     </Page.Transitions>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

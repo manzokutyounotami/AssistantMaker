@@ -23,6 +23,7 @@ namespace CortanaCommandService
     {
         private BackgroundTaskDeferral serviceDeferral;
         VoiceCommandServiceConnection voiceServiceConnection;
+        bool isRunningServer = true;
 
         public async void Run(IBackgroundTaskInstance taskInstance)
         {
@@ -48,7 +49,7 @@ namespace CortanaCommandService
                     var stateName = cols[1];
 
                     var commandViewModel = viewModel.CommandList.First(q => q.Name == commandName);
-                    Debug.WriteLine(viewModel.CommandList.Count);
+                    
                     commandViewModel.CurrentStateNum++;
                     var stateViewModel = commandViewModel.StateList.ElementAt(commandViewModel.CurrentStateNum - 1);
                     if (commandViewModel.CurrentStateNum>=commandViewModel.StateList.Count)
@@ -60,26 +61,43 @@ namespace CortanaCommandService
                         SuccessStateViewModel state = stateViewModel as SuccessStateViewModel;
                         if (!string.IsNullOrEmpty(state.Script))
                         {
-                            ConnectionData connectionData = new ConnectionData();
-                            connectionData.AcceptPass = SettingManager.AcceptPass;
-                            connectionData.Script = state.Script.Replace("\n", ";").Replace("\r","").Replace("\t","");
-                            string json = JsonConvert.SerializeObject(connectionData);
-                            var byteData = Encoding.UTF8.GetBytes(json);
-                            StreamSocket socket = new StreamSocket();
+                            try {
+                                ConnectionData connectionData = new ConnectionData();
+                                connectionData.AcceptPass = SettingManager.AcceptPass;
+                                connectionData.Script = state.Script.Replace("\n", ";").Replace("\r", "").Replace("\t", "");
+                                string json = JsonConvert.SerializeObject(connectionData);
+                                var byteData = Encoding.UTF8.GetBytes(json);
+                                StreamSocket socket = new StreamSocket();
 
-                            await socket.ConnectAsync(new HostName("127.0.0.1"), SettingManager.ServerPort);
-                            var writer = new DataWriter(socket.OutputStream);
-                            writer.WriteBytes(byteData);
-                            await writer.StoreAsync();
-                            await writer.FlushAsync();
-                            writer.Dispose();
-                            socket.Dispose();
+                                await socket.ConnectAsync(new HostName("127.0.0.1"), SettingManager.ServerPort);
+                                var writer = new DataWriter(socket.OutputStream);
+                                writer.WriteBytes(byteData);
+                                await writer.StoreAsync();
+                                await writer.FlushAsync();
+                                writer.Dispose();
+                                socket.Dispose();
+                                
+                            }
+                            catch (Exception)
+                            {
+                                var errorMsg = new VoiceCommandUserMessage();
+                                string msg = "スクリプトの実行を試みましたがサーバーが起動してませんでした";
+                                errorMsg.SpokenMessage = msg;
+                                errorMsg.DisplayMessage = msg;
+                                var errorResponse = VoiceCommandResponse.CreateResponse(errorMsg);
+                                await voiceServiceConnection.ReportFailureAsync(errorResponse);
+                                isRunningServer = false;
+                            }
                         }
-                        var message = new VoiceCommandUserMessage();
-                        message.SpokenMessage = state.Utterance;
-                        message.DisplayMessage = state.Utterance;
-                        var response = VoiceCommandResponse.CreateResponse(message);
-                        await voiceServiceConnection.ReportSuccessAsync(response);
+                        
+                        if (isRunningServer)
+                        {
+                            var message = new VoiceCommandUserMessage();
+                            message.SpokenMessage = state.Utterance;
+                            message.DisplayMessage = state.Utterance;
+                            var response = VoiceCommandResponse.CreateResponse(message);
+                            await voiceServiceConnection.ReportSuccessAsync(response);
+                        }
                     }
 
                     await DataSaveAsync(viewModel);

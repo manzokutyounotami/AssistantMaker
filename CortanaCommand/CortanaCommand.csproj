@@ -99,6 +99,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AppState.cs" />
+    <Compile Include="AppStateManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Pages\CommandPage.xaml.cs">
       <DependentUpon>CommandPage.xaml</DependentUpon>

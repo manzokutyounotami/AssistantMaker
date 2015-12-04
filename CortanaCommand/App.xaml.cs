@@ -71,7 +71,7 @@ namespace CortanaCommand
             StateManager = new AppStateManager();
             StateManager.StateList.Add(AppState.Mobile, 0);
             StateManager.StateList.Add(AppState.Normal, 400);
-            StateManager.StateList.Add(AppState.Wide, 1200);
+            StateManager.StateList.Add(AppState.Wide, 1600);
             
             ViewModel = new MainViewModel();
             var vm = DataLoadAsync().Result;

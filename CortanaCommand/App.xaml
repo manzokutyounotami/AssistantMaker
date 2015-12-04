@@ -11,7 +11,7 @@
         <SolidColorBrush x:Key="SplitViewBackgroundBrush" Color="#FF2C2C2C"/>
         <!--アプリケーションのテーマ色を定義-->
         <SolidColorBrush x:Key="ApplicationThemeBrush" Color="#418b89"/>
-
+        <x:Double x:Key="ContentDescriptionSize">12</x:Double>
         <!--ToggleButtonやAppBarButtonのStyleを定義している。よくわからない人は気にしてはいけない-->
         <Style x:Key="SplitViewAppBarButtonStyle" TargetType="AppBarButton">
             <Setter Property="Background" Value="Transparent"/>

@@ -6,6 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        
+
+    </Page.Resources>
     <Page.Transitions>
         <TransitionCollection>
             <EntranceThemeTransition FromVerticalOffset="0" FromHorizontalOffset="-80" />
@@ -22,17 +26,32 @@
         <ScrollViewer Grid.Row="1">
             <StackPanel Grid.Column="0" Margin="20,10,20,0" Grid.Row="1">
                 <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ListenFor" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識させたいパターンを記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="複数行書くことで複数の認識パターンを記述できます" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="[ ]で囲むとその中の言葉はあってもなくてもよいことになります" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+
                 <TextBox Text="{Binding ListenFor,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="111" />
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Example" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識発話例を書きます" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+
                 <TextBox Text="{Binding Example,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FeedBack" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識完了したときのフィードバック発話を記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Utterance項目を書く場合は必要ないので . と記述すると無発話になります" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+
                 <TextBox Text="{Binding FeedBack,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Utterance" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識したときにコルタナにしゃべらせたい発話を記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+
                 <TextBox Text="{Binding Utterance,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Script" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識したときに実行したいPowerShellスクリプトを記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="スクリプトを実行するにはサーバーを起動させる必要があります" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="スクリプトを実行する必要がない場合は空欄にします" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+
                 <TextBox Text="{Binding Script,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="280" />
             </StackPanel>
         </ScrollViewer>
-        
+
     </Grid>
 </Page>

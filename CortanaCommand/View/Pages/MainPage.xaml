@@ -81,10 +81,10 @@
                     </StackPanel>
                 </Grid>
             </SplitView.Pane>
-            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
+            <!--<ScrollViewer HorizontalScrollBarVisibility="Auto" HorizontalScrollMode="Auto">-->
                 <!--このFrameにいろいろなページをNavigateすることでページを切り替える-->
                 <Frame x:Name="frameContent" MinWidth="800"></Frame>
-            </ScrollViewer>
+            <!--</ScrollViewer>-->
         </SplitView>
         <CommandBar HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Top" Background="{x:Null}" Grid.RowSpan="2" >
             <CommandBar.PrimaryCommands>

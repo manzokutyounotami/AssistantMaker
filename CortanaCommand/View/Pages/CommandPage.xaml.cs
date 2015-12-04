@@ -36,18 +36,6 @@ namespace CortanaCommand.View.Pages
             this.DataContext = _viewModel;
         }
 
-        private void listBoxState_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (listBoxState.SelectedIndex != -1)
-            {
-                var vm = listBoxState.SelectedItem;
-                if (vm is SuccessStateViewModel)
-                {
-                    App.NavigateFrame(frameState, typeof(SuccessStatePage), vm);
-                }
-            }
-        }
-
         private void menuItemState_Click(object sender, RoutedEventArgs e)
         {
             if(listBoxState.SelectedIndex != -1)
@@ -59,6 +47,15 @@ namespace CortanaCommand.View.Pages
         private void Grid_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
             FlyoutBase.ShowAttachedFlyout(sender as Grid);
+        }
+
+        private void listBoxState_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var vm = e.ClickedItem;
+            if (vm is SuccessStateViewModel)
+            {
+                App.NavigateFrame(frameState, typeof(SuccessStatePage), vm);
+            }
         }
     }
 }

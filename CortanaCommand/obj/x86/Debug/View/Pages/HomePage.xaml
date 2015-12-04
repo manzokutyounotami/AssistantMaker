@@ -26,9 +26,9 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1">
-                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Command" VerticalAlignment="Center" Foreground="{StaticResource ApplicationThemeBrush}" FontSize="21.333"/>
+                <TextBlock x:ConnectionId='5' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Command" VerticalAlignment="Center" Foreground="{StaticResource ApplicationThemeBrush}" FontSize="21.333"/>
             </Grid>
-            <ListView x:Name="listBox_command" Margin="0" Grid.Row="1" Background="White" ItemsSource="{Binding CommandList}" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1" CanDragItems="True" CanReorderItems="True" ReorderMode="Enabled" CanDrag="True" AllowDrop="True" ItemClick="listBox_command_ItemClick" IsItemClickEnabled="True" ItemContainerStyle="{StaticResource ListViewItemStyle}">
+            <ListView x:ConnectionId='2' x:Name="listBox_command" Margin="0" Grid.Row="1" Background="White" ItemsSource="{Binding CommandList}" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1" CanDragItems="True" CanReorderItems="True" ReorderMode="Enabled" CanDrag="True" AllowDrop="True"                                       IsItemClickEnabled="True" ItemContainerStyle="{StaticResource ListViewItemStyle}">
                 <ListView.Transitions>
                     <TransitionCollection>
                         <AddDeleteThemeTransition/>
@@ -37,11 +37,11 @@
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid x:Name="gridListTemplate" RightTapped="gridListTemplate_RightTapped" Height="30">
+                        <Grid x:ConnectionId='3' x:Name="gridListTemplate"                                            Height="30">
                             <TextBlock Text="{Binding Name}" FontSize="18" />
                             <FlyoutBase.AttachedFlyout>
                                 <MenuFlyout Placement="Bottom">
-                                    <MenuFlyoutItem x:Name="menuItemDelete" Text="削除" Click="menuItemDelete_Click" />
+                                    <MenuFlyoutItem x:ConnectionId='4' x:Name="menuItemDelete" Text="削除"                              />
                                 </MenuFlyout>
                             </FlyoutBase.AttachedFlyout>
                         </Grid>
@@ -54,7 +54,8 @@
                 </CommandBar.PrimaryCommands>
             </CommandBar>
         </Grid>
-        <Frame x:Name="frameCommand" Grid.Column="1"></Frame>
+        <Frame x:ConnectionId='1' x:Name="frameCommand" Grid.Column="1"></Frame>
 
     </Grid>
 </Page>
+

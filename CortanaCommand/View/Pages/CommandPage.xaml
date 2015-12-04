@@ -38,16 +38,16 @@
                 <TextBox x:Name="textBox1" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentStateNum,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Width="135"  Height="32" Margin="150,0,0,0"/>
                 <TextBlock Grid.Row="2" Margin="10,0" TextWrapping="Wrap" Text="現在のコマンドにおけるコルタナの状態リストです。上から順番に認識され、認識するたびにCurrentStateが1増えて次の状態に遷移します。CurrentStateが最後まで来たら最初にもどります" FontSize="{StaticResource ContentDescriptionSize}" Foreground="White" />
 
-                <ListBox x:Name="listBoxState"  Grid.Row="2" Background="{x:Null}" ItemsSource="{Binding StateList}" SelectionChanged="listBoxState_SelectionChanged" ItemContainerStyle="{StaticResource ListBoxItemStyle}" CanDrag="True" >
-                    <ListBox.Transitions>
+                <ListView x:Name="listBoxState"  Grid.Row="3" Background="{x:Null}" ItemsSource="{Binding StateList}" CanDrag="True" CanDragItems="True" CanReorderItems="True" ReorderMode="Enabled" AllowDrop="True" IsItemClickEnabled="True" ItemClick="listBoxState_ItemClick" ItemContainerStyle="{StaticResource ListViewItemStyle}">
+                    <ListView.Transitions>
                         <TransitionCollection>
                             <AddDeleteThemeTransition/>
                         </TransitionCollection>
-                    </ListBox.Transitions>
-                    <ListBox.ItemTemplate>
+                    </ListView.Transitions>
+                    <ListView.ItemTemplate>
                         <DataTemplate>
                             <Grid Height="30" RightTapped="Grid_RightTapped">
-                                <TextBlock Text="{Binding Name}" FontSize="18" />
+                                <TextBlock Text="{Binding Name}" FontSize="18" Foreground="White" />
                                 <FlyoutBase.AttachedFlyout>
                                     <MenuFlyout Placement="Bottom">
                                         <MenuFlyoutItem x:Name="menuItemState" Text="削除" Click="menuItemState_Click" />
@@ -56,8 +56,8 @@
                             </Grid>
 
                         </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+                    </ListView.ItemTemplate>
+                </ListView>
                 <CommandBar Grid.Row="3" VerticalAlignment="Bottom" Height="48">
                     <AppBarButton Icon="Add">
                         <AppBarButton.Flyout>

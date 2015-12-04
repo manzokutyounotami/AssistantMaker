@@ -36,13 +36,6 @@ namespace CortanaCommand
             
         }
 
-        private void listBox_command_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if(listBox_command.SelectedIndex != -1)
-            {
-                App.NavigateFrame(frameCommand,typeof(CommandPage),listBox_command.SelectedItem);
-            }
-        }
 
         private void gridListTemplate_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
@@ -55,6 +48,11 @@ namespace CortanaCommand
             {
                 _viewModel.DeleteCommandCommand.Execute(listBox_command.SelectedItem);
             }
+        }
+
+        private void listBox_command_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            App.NavigateFrame(frameCommand, typeof(CommandPage), e.ClickedItem);
         }
     }
 }

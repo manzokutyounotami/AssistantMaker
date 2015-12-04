@@ -32,18 +32,24 @@ namespace CortanaCommand
             //アプリのライフサイクルをフック
             App.Current.Resuming += Current_Resuming;
             App.Current.Suspending += Current_Suspending;
-            App.OnChangeAppState += (state) =>
+            App.OnChangeAppState += (state,prev) =>
             {
                 switch (state)
                 {
                     case AppState.Mobile:
+                        App.NavigateFrame(frameContent, typeof(MainPage), null);
+
                         VisualStateManager.GoToState(this,"MobileState",true);
+                        
                         break;
                     case AppState.Normal:
+                        App.RootFrame.Navigate(typeof(MainPage));
                         VisualStateManager.GoToState(this, "NormalState", true);
+                        
                         break;
                     case AppState.Wide:
                         VisualStateManager.GoToState(this, "WideState", true);
+                        
                         break;
                 }
             };
@@ -55,7 +61,22 @@ namespace CortanaCommand
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            
+            switch (App.StateManager.CurrentState)
+            {
+                case AppState.Mobile:
+                    
+                    VisualStateManager.GoToState(this, "MobileState", true);
+
+                    break;
+                case AppState.Normal:
+                    VisualStateManager.GoToState(this, "NormalState", true);
+
+                    break;
+                case AppState.Wide:
+                    VisualStateManager.GoToState(this, "WideState", true);
+
+                    break;
+            }
         }
 
         //ページが読み込まれた時

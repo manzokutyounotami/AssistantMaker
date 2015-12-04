@@ -23,7 +23,7 @@
         </Grid.RowDefinitions>
 
         <TextBox Grid.Row="0" x:Name="textBox" Margin="10,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Background="{x:Null}" Foreground="White" FontSize="18" />
-        <ScrollViewer Grid.Row="1">
+        <ScrollViewer Grid.Row="1" VerticalScrollMode="Auto">
             <StackPanel Grid.Column="0" Margin="20,10,20,0" Grid.Row="1">
                 <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ListenFor" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識させたいパターンを記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>

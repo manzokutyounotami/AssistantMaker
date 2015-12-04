@@ -40,7 +40,7 @@ namespace CortanaCommand
         }
 
         public static AppStateManager StateManager { get; set; }
-        public static event Action<AppState> OnChangeAppState;
+        public static event Action<AppState,AppState> OnChangeAppState;
 
         public static void NavigateFrame(Frame frameIfNoMobileMode, Type pageType, object param)
         {
@@ -70,7 +70,7 @@ namespace CortanaCommand
             this.Resuming += OnResuming;
             StateManager = new AppStateManager();
             StateManager.StateList.Add(AppState.Mobile, 0);
-            StateManager.StateList.Add(AppState.Normal, 400);
+            StateManager.StateList.Add(AppState.Normal, 800);
             StateManager.StateList.Add(AppState.Wide, 1600);
             
             ViewModel = new MainViewModel();
@@ -97,7 +97,7 @@ namespace CortanaCommand
                     await dialog.ShowAsync();
                 }
             };
-            OnChangeAppState += (s) => { };
+            OnChangeAppState += (s,s2) => { };
 
             
 
@@ -174,6 +174,7 @@ namespace CortanaCommand
 
         private void OnWindowSizeChanged(Size newSize)
         {
+            var prevState = App.StateManager.CurrentState;
             bool isChange = StateManager.TryChangeState(newSize.Width);
             if (isChange)
             {
@@ -187,7 +188,7 @@ namespace CortanaCommand
                         SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
                         break;
                 }
-                OnChangeAppState(StateManager.CurrentState);
+                OnChangeAppState(StateManager.CurrentState,prevState);
             }
         }
 

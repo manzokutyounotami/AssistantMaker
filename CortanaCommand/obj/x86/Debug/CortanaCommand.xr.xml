@@ -10,7 +10,6 @@
     <RootPropertyPathName Name="CommandList" />
     <RootPropertyPathName Name="UpdateCortanaCommand" />
     <RootPropertyPathName Name="IsPaneOpen" />
-    <RootPropertyPathName Name="Protocol" />
     <RootPropertyPathName Name="Script" />
     <RootPropertyPathName Name="Utterance" />
     <RootPropertyPathName Name="FeedBack" />

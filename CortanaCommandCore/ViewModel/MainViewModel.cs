@@ -1,6 +1,7 @@
 ﻿using CortanaCommand.Core.Cortana;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -121,6 +122,12 @@ namespace CortanaCommand.ViewModel
 
             UpdateCortanaCommand = new RelayCommand(()=>
             {
+                if (CommandList.GroupBy(q => q.Name).Where(w => w.Count() > 1).Count() > 0)
+                {
+                    Messenger.Default.Send<string>("Commandの名前が重複しています","error");
+                    return;
+                }
+                
                 CortanaXmlGenerator generator = new CortanaXmlGenerator(CommandPrefix,Example);
                 foreach(var command in CommandList)
                 {
@@ -128,12 +135,16 @@ namespace CortanaCommand.ViewModel
                     {
                         if(state is SuccessStateViewModel)
                         {
-                            
                             generator.AddCommandService(command.Name+"_"+state.Name,state.Example,
                                 state.ListenFor.Replace("\r","").Split('\n'),
                                 state.FeedBack,
                                 voiceCommandServiceName);
                         }
+                    }
+                    if (command.StateList.GroupBy(q => q.Name).Where(w => w.Count() > 1).Count() > 0)
+                    {
+                        Messenger.Default.Send<string>(command.Name+"コマンドのstateの名前が重複しています", "error");
+                        return;
                     }
                 }
 

@@ -24,7 +24,6 @@ namespace CortanaCommandService
     {
         private BackgroundTaskDeferral serviceDeferral;
         VoiceCommandServiceConnection voiceServiceConnection;
-        bool isRunningServer = false;
 
         public async void Run(IBackgroundTaskInstance taskInstance)
         {
@@ -95,7 +94,17 @@ namespace CortanaCommandService
 
                         if (!string.IsNullOrEmpty(state.Protocol))
                         {
-                            await Launcher.LaunchUriAsync(new Uri(state.Protocol));
+                            var result = await Launcher.LaunchUriAsync(new Uri(state.Protocol));
+                            if (!result)
+                            {
+                                var errorMsg = new VoiceCommandUserMessage();
+                                string msg = "プロトコル起動を試みましたがURLが間違っているようです";
+                                errorMsg.SpokenMessage = msg;
+                                errorMsg.DisplayMessage = msg;
+                                var errorResponse = VoiceCommandResponse.CreateResponse(errorMsg);
+                                await voiceServiceConnection.ReportFailureAsync(errorResponse);
+                                return;
+                            }
                         }
 
                         if (string.IsNullOrEmpty(state.Utterance))

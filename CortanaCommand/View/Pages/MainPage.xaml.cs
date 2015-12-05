@@ -1,5 +1,6 @@
 ﻿using CortanaCommand.View;
 using CortanaCommand.View.Pages;
+using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,6 +11,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -53,6 +55,11 @@ namespace CortanaCommand
                         break;
                 }
             };
+            Messenger.Default.Register<string>("","error",async (message)=>
+            {
+                var dialog = new MessageDialog(message,"error");
+                await dialog.ShowAsync();
+            });
 
             this.DataContext = App.ViewModel;
             

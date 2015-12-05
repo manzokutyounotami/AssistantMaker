@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-04T23:53:47.455</Modified>
+      <Modified>2015-12-05T00:25:25.809</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -240,23 +240,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommand.exe">
       <PackagePath>CortanaCommand.exe</PackagePath>
-      <Modified>2015-12-04T23:53:47.452</Modified>
+      <Modified>2015-12-05T00:25:25.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommand.xr.xml">
       <PackagePath>CortanaCommand.xr.xml</PackagePath>
-      <Modified>2015-12-04T23:47:27.258</Modified>
+      <Modified>2015-12-05T00:23:34.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommandCore.dll">
       <PackagePath>CortanaCommandCore.dll</PackagePath>
-      <Modified>2015-12-04T23:47:23.203</Modified>
+      <Modified>2015-12-05T00:25:14.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommandService.winmd">
       <PackagePath>CortanaCommandService.winmd</PackagePath>
-      <Modified>2015-12-04T23:53:36.857</Modified>
+      <Modified>2015-12-05T00:25:16.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\entrypoint\CortanaCommand.exe">
       <PackagePath>entrypoint\CortanaCommand.exe</PackagePath>
-      <Modified>2015-12-04T23:53:40.154</Modified>
+      <Modified>2015-12-05T00:25:19.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
@@ -308,7 +308,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-04T23:53:40.810</Modified>
+      <Modified>2015-12-05T00:23:35.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

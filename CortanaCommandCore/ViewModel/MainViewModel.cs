@@ -75,12 +75,21 @@ namespace CortanaCommand.ViewModel
             }
         }
 
+        private double _listWidth;
+
+        public double ListWidth
+        {
+            get { return _listWidth; }
+            set { this.Set(ref _listWidth,value); }
+        }
+        
+
+
         public RelayCommand AddCommandCommand{ get; set; }
 
         public RelayCommand<CommandViewModel> DeleteCommandCommand { get; set; }
 
         public RelayCommand UpdateCortanaCommand { get; set; }
-
         
 
         private string voiceCommandServiceName = "CortanaCommandService";
@@ -162,6 +171,14 @@ namespace CortanaCommand.ViewModel
 
             CommandPrefix = "コルタナ";
             Example = "こんにちはコルタナ";
+
+
+            ListWidth = 340;
+        }
+
+        public void UpdateListWidth(double width)
+        {
+            this.ListWidth = width;
         }
 
         

@@ -51,13 +51,15 @@
                 
                 <TextBox Text="{Binding Protocol,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" PlaceholderText="(例) microsoft-edge:http://garicchi.com" />
                 -->
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Script" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="PowerShell Command" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
                 
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識したときに実行したいPowerShellスクリプトを記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識したときに実行したいPowerShellコマンドレットを記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="スクリプトを実行するにはサーバーを起動させる必要があります" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="複数のコマンドを実行する場合は複数行にわたって書けばOKですがスクリプト構文などは難しいので別途ps1ファイルを用意して呼び出してください" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
+
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="スクリプトを実行する必要がない場合は空欄にします" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
 
-                <TextBox Text="{Binding Script,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="280" PlaceholderText="(例) Get-ChildItem" />
+                <TextBox Text="{Binding Script,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="150" PlaceholderText="(例) Get-ChildItem" />
              </StackPanel>
         </ScrollViewer>
 

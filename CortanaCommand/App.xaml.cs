@@ -182,10 +182,12 @@ namespace CortanaCommand
                 {
                     case AppState.Mobile:
                         SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+                        ViewModel.UpdateListWidth(Window.Current.Bounds.Width);
                         break;
                     case AppState.Normal:
                     case AppState.Wide:
                         SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+                        ViewModel.UpdateListWidth(340);
                         break;
                 }
                 OnChangeAppState(StateManager.CurrentState,prevState);

@@ -76,7 +76,6 @@ namespace CortanaCommandService
                                 await writer.FlushAsync();
                                 writer.Dispose();
                                 socket.Dispose();
-                                isRunningServer = true;
                                 
                             }
                             catch (Exception)
@@ -87,7 +86,6 @@ namespace CortanaCommandService
                                 errorMsg.DisplayMessage = msg;
                                 var errorResponse = VoiceCommandResponse.CreateResponse(errorMsg);
                                 await voiceServiceConnection.ReportFailureAsync(errorResponse);
-                                isRunningServer = false;
                                 return;
                             }
                         }

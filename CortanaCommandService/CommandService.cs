@@ -63,7 +63,7 @@ namespace CortanaCommandService
                         {
                             try {
                                 ConnectionData connectionData = new ConnectionData();
-                                connectionData.AcceptPass = SettingManager.AcceptPass;
+                                connectionData.AcceptPass = viewModel.PassCode;
                                 connectionData.Script = state.Script.Replace("\n", ";").Replace("\r", "").Replace("\t", "");
                                 string json = JsonConvert.SerializeObject(connectionData);
                                 var byteData = Encoding.UTF8.GetBytes(json);

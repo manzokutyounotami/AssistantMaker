@@ -33,6 +33,12 @@ namespace CortanaCommand
 
             this.DataContext = App.ViewModel;
             this._viewModel = App.ViewModel;
+
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
             
         }
 

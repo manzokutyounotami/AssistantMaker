@@ -6,8 +6,20 @@
         xmlns:local="clr-namespace:CortanaCommandServer"
         mc:Ignorable="d"
         Title="CortanaCommandServer" Height="350" Width="525" Icon="favicon.ico">
-    <Grid>
-        <ListBox x:Name="listBox" Margin="2" ItemsSource="{Binding LogList}"/>
+    <TabControl>
+        <TabItem Header="Log">
+            <ListBox x:Name="listBox" Margin="2" ItemsSource="{Binding LogList}"/>
+        </TabItem>
+        <TabItem Header="Setting">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="PassCode" />
+                <TextBox Text="{Binding Setting.PassCode,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="0,0,20,0" />
+                <TextBlock Text="PowerShell Directory" />
+                <TextBox Text="{Binding Setting.PowerShellPath,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="0,0,20,0" />
+                <TextBlock Text="自動起動" />
+                <CheckBox Content="次回から自動起動する" IsChecked="{Binding Setting.IsAutoStart,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+            </StackPanel>
+        </TabItem>
 
-    </Grid>
+    </TabControl>
 </Window>

@@ -51,7 +51,7 @@
                 <ColumnDefinition Width="270"/>
             </Grid.ColumnDefinitions>
             <!--SplitViewの開閉を行うToglleButton SplitViewのIsOpenPaneプロパティとバインドされているのでボタンを押すとSplitViewが開閉する-->
-            <ToggleButton x:ConnectionId='11' x:Name="paneButton" Width="48" Height="48" Grid.Column="0" Style="{StaticResource SplitViewToggleButtonStyle}" IsChecked="{Binding ElementName=splitView,Path=IsPaneOpen,Mode=TwoWay}">
+            <ToggleButton x:ConnectionId='12' x:Name="paneButton" Width="48" Height="48" Grid.Column="0" Style="{StaticResource SplitViewToggleButtonStyle}" IsChecked="{Binding ElementName=splitView,Path=IsPaneOpen,Mode=TwoWay}">
                 <FontIcon Glyph="{StaticResource SplitViewButtonGlyph}" Foreground="White" />
             </ToggleButton>
             <!--検索ボックス-->
@@ -69,9 +69,10 @@
 
                     <!--SplitViewのPaneにあるナビゲーションボタン 特殊なAppBarButtonのStyleを適用している。詳しくはApp.xaml.cs-->
                     <StackPanel Orientation="Vertical" Grid.Row="0">
-                        <AppBarButton x:ConnectionId='8' x:Name="appButtonHome" Foreground="White" Icon="Microphone" Label="コマンドエディタ" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                             />
-                        <AppBarButton x:ConnectionId='9' x:Name="appButtonFavorite" Foreground="White" Icon="Page2" Label="登録済みXML" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                                 />
-                        
+                        <AppBarButton x:ConnectionId='8' x:Name="appButtonEditor" Foreground="White" Icon="Microphone" Label="コマンドエディタ" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                               />
+                        <AppBarButton x:ConnectionId='9' x:Name="appButtonXml" Foreground="White" Icon="Page2" Label="登録済みXML" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                            />
+                        <AppBarButton x:ConnectionId='10' x:Name="appButtonPreview" Foreground="White" Icon="Volume" Label="発話例" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                                />
+
                     </StackPanel>
 
                     <!--SplitViewのPaneにある設定ボタン-->
@@ -83,7 +84,7 @@
             </SplitView.Pane>
             <!--<ScrollViewer HorizontalScrollBarVisibility="Auto" HorizontalScrollMode="Auto">-->
                 <!--このFrameにいろいろなページをNavigateすることでページを切り替える-->
-                <Frame x:ConnectionId='10' x:Name="frameContent" MinWidth="800"></Frame>
+                <Frame x:ConnectionId='11' x:Name="frameContent" MinWidth="800"></Frame>
             <!--</ScrollViewer>-->
         </SplitView>
         <CommandBar HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Top" Background="{x:Null}" Grid.RowSpan="2" >

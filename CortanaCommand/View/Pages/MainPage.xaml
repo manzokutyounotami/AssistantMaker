@@ -69,9 +69,10 @@
 
                     <!--SplitViewのPaneにあるナビゲーションボタン 特殊なAppBarButtonのStyleを適用している。詳しくはApp.xaml.cs-->
                     <StackPanel Orientation="Vertical" Grid.Row="0">
-                        <AppBarButton x:Name="appButtonHome" Foreground="White" Icon="Microphone" Label="コマンドエディタ" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonHome_Click" />
-                        <AppBarButton x:Name="appButtonFavorite" Foreground="White" Icon="Page2" Label="登録済みXML" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonFavorite_Click" />
-                        
+                        <AppBarButton x:Name="appButtonEditor" Foreground="White" Icon="Microphone" Label="コマンドエディタ" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonEditor_Click" />
+                        <AppBarButton x:Name="appButtonXml" Foreground="White" Icon="Page2" Label="登録済みXML" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonXml_Click" />
+                        <AppBarButton x:Name="appButtonPreview" Foreground="White" Icon="Volume" Label="発話例" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonPreview_Click" />
+
                     </StackPanel>
 
                     <!--SplitViewのPaneにある設定ボタン-->

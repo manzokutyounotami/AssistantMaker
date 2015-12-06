@@ -23,9 +23,12 @@
             <PivotItem Header="全般">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="Command Prefix" FontSize="18.667" />
-                    <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding CommandPrefix,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBox Width="300" HorizontalAlignment="Left" Text="{Binding CommandPrefix,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
                     <TextBlock Text="Example" FontSize="18.667" />
-                    <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Example,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBox Width="300" HorizontalAlignment="Left" Text="{Binding Example,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock Text="ServerPassCode(この文字列をサーバーの設定にコピペしてください)" FontSize="18.667" />
+                    <TextBox Width="300" IsReadOnly="True" HorizontalAlignment="Left" Text="{Binding PassCode,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                    <Button Content="再生成" Command="{Binding ChangePassCodeCommand}" />
                 </StackPanel>
             </PivotItem>
             <PivotItem Header="このアプリについて">

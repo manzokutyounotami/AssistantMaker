@@ -110,7 +110,7 @@ namespace CortanaCommand
             }
         }
 
-        private void appButtonHome_Click(object sender, RoutedEventArgs e)
+        private void appButtonEditor_Click(object sender, RoutedEventArgs e)
         {
             frameContent.Navigate( typeof(HomePage), null);
             if (App.StateManager.CurrentState != AppState.Wide)
@@ -119,7 +119,7 @@ namespace CortanaCommand
             }
         }
 
-        private void appButtonFavorite_Click(object sender, RoutedEventArgs e)
+        private void appButtonXml_Click(object sender, RoutedEventArgs e)
         {
             frameContent.Navigate( typeof(CurrentXmlPage), null);
             if (App.StateManager.CurrentState != AppState.Wide)
@@ -150,6 +150,14 @@ namespace CortanaCommand
             */
         }
 
+        private void appButtonPreview_Click(object sender, RoutedEventArgs e)
+        {
+            frameContent.Navigate(typeof(PreviewPage), null);
+            if (App.StateManager.CurrentState != AppState.Wide)
+            {
+                splitView.IsPaneOpen = false;
+            }
+        }
     }
 
 

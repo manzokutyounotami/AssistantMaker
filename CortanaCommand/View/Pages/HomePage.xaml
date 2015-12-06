@@ -20,7 +20,7 @@
             <ColumnDefinition x:Name="listColumn" Width="340"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" Background="White">
+        <Grid x:Name="gridList" Grid.Column="0" Background="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="48"/>
                 <RowDefinition/>
@@ -38,23 +38,21 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid x:Name="gridListTemplate" RightTapped="gridListTemplate_RightTapped" Height="30">
-                            <TextBlock Text="{Binding Name}" FontSize="18" />
                             <FlyoutBase.AttachedFlyout>
                                 <MenuFlyout Placement="Bottom">
                                     <MenuFlyoutItem x:Name="menuItemDelete" Text="削除" Click="menuItemDelete_Click" />
                                 </MenuFlyout>
                             </FlyoutBase.AttachedFlyout>
+                            <TextBlock Text="{Binding Name}" FontSize="18" />
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
             <CommandBar VerticalAlignment="Bottom" Grid.Row="1">
-                <CommandBar.PrimaryCommands>
-                    <AppBarButton Icon="Add" Label="Add" Command="{Binding AddCommandCommand}" />
-                </CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Add" Label="Add" Command="{Binding AddCommandCommand}" />
             </CommandBar>
         </Grid>
-        <Frame x:Name="frameCommand" Grid.Column="1"></Frame>
+        <Frame x:Name="frameCommand" Grid.Column="1"/>
 
     </Grid>
 </Page>

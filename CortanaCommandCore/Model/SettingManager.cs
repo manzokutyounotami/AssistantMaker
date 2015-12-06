@@ -10,6 +10,5 @@ namespace CortanaCommandCore.Model
     {
         public static string ViewModelDataFileName = "ViewModelSaveData";
         public static string ServerPort = "6500";
-        public static string AcceptPass = "ga88n";
     }
 }

@@ -98,9 +98,6 @@ namespace CortanaCommand
                 }
             };
             OnChangeAppState += (s,s2) => { };
-
-            
-
         }
 
         

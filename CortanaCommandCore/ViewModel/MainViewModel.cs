@@ -82,15 +82,31 @@ namespace CortanaCommand.ViewModel
             get { return _listWidth; }
             set { this.Set(ref _listWidth,value); }
         }
-        
 
+        private string _passCode;
+
+        public string PassCode
+        {
+            get
+            {
+                return _passCode;
+            }
+
+            set
+            {
+                this.Set(ref _passCode,value);
+            }
+        }
+
+        
 
         public RelayCommand AddCommandCommand{ get; set; }
 
         public RelayCommand<CommandViewModel> DeleteCommandCommand { get; set; }
 
         public RelayCommand UpdateCortanaCommand { get; set; }
-        
+
+        public RelayCommand ChangePassCodeCommand { get; set; }
 
         private string voiceCommandServiceName = "CortanaCommandService";
 
@@ -169,9 +185,14 @@ namespace CortanaCommand.ViewModel
 
             };
 
+            ChangePassCodeCommand = new RelayCommand(() =>
+            {
+                this.PassCode = Guid.NewGuid().ToString();
+            });
+
             CommandPrefix = "コルタナ";
             Example = "こんにちはコルタナ";
-
+            ChangePassCodeCommand.Execute(null);
 
             ListWidth = 340;
         }

@@ -12,6 +12,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Threading;
 
 namespace CortanaCommandServer
@@ -21,6 +22,15 @@ namespace CortanaCommandServer
         TcpListener listner;
         TcpClient client;
         NetworkStream stream;
+
+        private ServerSetting _setting;
+
+        public ServerSetting Setting
+        {
+            get { return _setting; }
+            set { this.Set(ref _setting,value); }
+        }
+
 
         private ObservableCollection<string> _logList;
 
@@ -58,6 +68,7 @@ namespace CortanaCommandServer
             });
 
             LogList = new ObservableCollection<string>();
+            Setting = new ServerSetting();
         }
 
         private async Task StartServerAsync()
@@ -77,10 +88,14 @@ namespace CortanaCommandServer
                         var read = await stream.ReadAsync(buff, 0, buff.Length);
                         var json = Encoding.UTF8.GetString(buff);
                         var data = JsonConvert.DeserializeObject<ConnectionData>(json);
-                        if (data.AcceptPass == SettingManager.AcceptPass)
+                        if (data.AcceptPass == Setting.PassCode)
                         {
                             LogList.Add("Script Run ["+data.Script+"]");
-                            Process.Start(@"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe",data.Script);
+                            Process.Start(Setting.PowerShellPath,data.Script);
+                        }
+                        else
+                        {
+                            MessageBox.Show("パスコードが違うようです。CortanaCommandアプリの設定からパスコードを取得し、サーバーの設定にペーストしてください");
                         }
                         client.Close();
                         listner.Stop();

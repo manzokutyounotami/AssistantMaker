@@ -15,6 +15,8 @@
     <RootPropertyPathName Name="FeedBack" />
     <RootPropertyPathName Name="Example" />
     <RootPropertyPathName Name="ListenFor" />
+    <RootPropertyPathName Name="ChangePassCodeCommand" />
+    <RootPropertyPathName Name="PassCode" />
     <RootPropertyPathName Name="CommandPrefix" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -320,6 +322,7 @@
       <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="CortanaCommand.MainPage" />
+    <RootType FullName="CortanaCommand.View.Pages.PreviewPage" />
     <RootType FullName="CortanaCommand.View.Pages.SuccessStatePage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Items" />
@@ -327,6 +330,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
     </RootType>
     <RootType FullName="CortanaCommand.SettingPage" />
   </Roots.RootTypes>

@@ -10,6 +10,5 @@ C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj
 C:\Users\garic\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.csprojResolveAssemblyReference.cache
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\bin\Debug\CortanaCommandCore.dll
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\bin\Debug\CortanaCommandCore.pdb
-C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.csprojResolveAssemblyReference.cache
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.dll
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Debug\CortanaCommandCore.pdb

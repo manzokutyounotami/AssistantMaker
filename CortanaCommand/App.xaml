@@ -10,7 +10,7 @@
         <x:String x:Key="SplitViewButtonGlyph">&#xE700;</x:String>
         <SolidColorBrush x:Key="SplitViewBackgroundBrush" Color="#FF2C2C2C"/>
         <!--アプリケーションのテーマ色を定義-->
-        <SolidColorBrush x:Key="ApplicationThemeBrush" Color="#418b89"/>
+        <SolidColorBrush x:Key="ApplicationThemeBrush" Color="#FF4C6CB3"/>
         <x:Double x:Key="ContentDescriptionSize">12</x:Double>
         <!--ToggleButtonやAppBarButtonのStyleを定義している。よくわからない人は気にしてはいけない-->
         <Style x:Key="SplitViewAppBarButtonStyle" TargetType="AppBarButton">

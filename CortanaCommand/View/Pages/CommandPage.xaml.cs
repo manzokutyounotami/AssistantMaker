@@ -58,10 +58,10 @@ namespace CortanaCommand.View.Pages
                 App.NavigateFrame(frameState, typeof(SuccessStatePage), vm);
             }else if (vm is ScriptStateViewModel)
             {
-                App.NavigateFrame(frameState, typeof(ScriptStateViewModel), vm);
+                App.NavigateFrame(frameState, typeof(ScriptStatePage), vm);
             }else if (vm is ProtocolStateViewModel)
             {
-                App.NavigateFrame(frameState, typeof(ProtocolStateViewModel), vm);
+                App.NavigateFrame(frameState, typeof(ProtocolStatePage), vm);
             }
         }
     }

@@ -93,7 +93,7 @@ namespace CortanaCommand.ViewModel
 
             AddProtocolStateCommand = new RelayCommand(() =>
             {
-                var vm = new ScriptStateViewModel();
+                var vm = new ProtocolStateViewModel();
                 vm.Name = "State" + GetStateMaxNum();
                 this.StateList.Add(vm);
             });

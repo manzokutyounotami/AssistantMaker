@@ -219,7 +219,8 @@ namespace CortanaCommand
                     if (state is ProtocolStateViewModel)
                     {
                         var protocolState = state as ProtocolStateViewModel;
-                        await Launcher.LaunchUriAsync(new Uri(protocolState.Protocol));
+                        var bln = await Launcher.LaunchUriAsync(new Uri(protocolState.Protocol));
+                        
                     }
                 }
 

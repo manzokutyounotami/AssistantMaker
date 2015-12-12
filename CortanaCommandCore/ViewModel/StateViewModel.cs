@@ -52,6 +52,14 @@ namespace CortanaCommand.ViewModel
             }
         }
 
+        public string FirstListenFor
+        {
+            get
+            {
+                return ListenFor.Split('\n').First();
+            }
+        }
+
         public string FeedBack
         {
             get
@@ -69,28 +77,14 @@ namespace CortanaCommand.ViewModel
 
         private string _feedBack;
 
-        public string Script
-        {
-            get
-            {
-                return _script;
-            }
+        private string _stateCategory;
 
-            set
-            {
-                this.Set(ref _script, value);
-            }
+        public string StateCategory
+        {
+            get { return _stateCategory; }
+            set { this.Set(ref _stateCategory,value); }
         }
 
-        private string _script;
-
-        private string _protocol;
-
-        public string Protocol
-        {
-            get { return _protocol; }
-            set { this.Set(ref _protocol, value); }
-        }
 
 
         public StateViewModel()
@@ -98,6 +92,7 @@ namespace CortanaCommand.ViewModel
             Example = "こんにちはコルタナ";
             ListenFor = "[こんにちは]コルタナ";
             FeedBack = ".";
+            StateCategory = "";
         }
 
         

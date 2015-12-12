@@ -19,11 +19,12 @@
     <Grid Background="{StaticResource ApplicationThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="48"/>
+            <RowDefinition Height="48"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
-        <TextBox Grid.Row="0" x:Name="textBox" Margin="10,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Background="{x:Null}" Foreground="White" FontSize="18" />
-        <ScrollViewer Grid.Row="1" VerticalScrollMode="Auto">
+        <TextBlock Grid.Row="0" Margin="10,0" TextWrapping="Wrap" Text="{Binding StateCategory}" VerticalAlignment="Center" Foreground="White" FontSize="18" />
+        <TextBox Grid.Row="1" x:Name="textBox" Margin="10,0" TextWrapping="Wrap" Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Background="{x:Null}" Foreground="White" FontSize="18" />
+        <ScrollViewer Grid.Row="2" VerticalScrollMode="Auto">
             <StackPanel Grid.Column="0" Margin="20,10,20,0" Grid.Row="1">
                 <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ListenFor" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識させたいパターンを記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
@@ -43,23 +44,7 @@
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Utterance" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識したときにコルタナにしゃべらせたい発話を記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
                 <TextBox Text="{Binding Utterance,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" PlaceholderText="(例) はい、こんにちは" />
-                <!--
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Protocol" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="指定したアドレスにブラウザでアクセスします" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="UWPのプロトコル機能で別UWPアプリと連携できます" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="必要ない場合は空欄にします" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
                 
-                <TextBox Text="{Binding Protocol,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" PlaceholderText="(例) microsoft-edge:http://garicchi.com" />
-                -->
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="PowerShell Command" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentTitleSize}"/>
-                
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="認識したときに実行したいPowerShellコマンドレットを記述します" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="スクリプトを実行するにはサーバーを起動させる必要があります" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="複数のコマンドを実行する場合は複数行にわたって書けばOKですがスクリプト構文などは難しいので別途ps1ファイルを用意して呼び出してください" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
-
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="スクリプトを実行する必要がない場合は空欄にします" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
-
-                <TextBox Text="{Binding Script,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True" Height="150" PlaceholderText="(例) Get-ChildItem" />
              </StackPanel>
         </ScrollViewer>
 

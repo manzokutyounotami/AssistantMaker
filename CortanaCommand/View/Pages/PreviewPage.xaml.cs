@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CortanaCommand.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,14 +18,25 @@ using Windows.UI.Xaml.Navigation;
 
 namespace CortanaCommand.View.Pages
 {
+    
     /// <summary>
     /// それ自体で使用できる空白ページまたはフレーム内に移動できる空白ページ。
     /// </summary>
+    /// 
     public sealed partial class PreviewPage : Page
     {
+        private MainViewModel _viewModel;
         public PreviewPage()
         {
             this.InitializeComponent();
+            this.DataContext = App.ViewModel;
+            this._viewModel = App.ViewModel;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            _viewModel.UpdatePreviewCommand.Execute(null);
         }
     }
 }

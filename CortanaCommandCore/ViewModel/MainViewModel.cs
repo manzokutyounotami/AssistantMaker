@@ -1,4 +1,6 @@
 ﻿using CortanaCommand.Core.Cortana;
+using CortanaCommandCore.Model;
+using CortanaCommandCore.ViewModel;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
@@ -98,7 +100,20 @@ namespace CortanaCommand.ViewModel
             }
         }
 
-        
+        ObservableCollection<CommandPreview> _previewCollection;
+
+        public ObservableCollection<CommandPreview> PreviewCollection
+        {
+            get
+            {
+                return _previewCollection;
+            }
+
+            set
+            {
+                this.Set(ref _previewCollection,value);
+            }
+        }
 
         public RelayCommand AddCommandCommand{ get; set; }
 
@@ -107,6 +122,10 @@ namespace CortanaCommand.ViewModel
         public RelayCommand UpdateCortanaCommand { get; set; }
 
         public RelayCommand ChangePassCodeCommand { get; set; }
+
+        public RelayCommand UpdatePreviewCommand { get; set; }
+
+        public RelayCommand InitializeCommand { get; set; }
 
         private string voiceCommandServiceName = "CortanaCommandService";
 
@@ -164,6 +183,18 @@ namespace CortanaCommand.ViewModel
                                 state.ListenFor.Replace("\r","").Split('\n'),
                                 state.FeedBack,
                                 voiceCommandServiceName);
+                        }else if(state is ScriptStateViewModel)
+                        {
+                            generator.AddCommandService(command.Name + "_" + state.Name, state.Example,
+                                state.ListenFor.Replace("\r", "").Split('\n'),
+                                state.FeedBack,
+                                voiceCommandServiceName);
+                        }else if(state is ProtocolStateViewModel)
+                        {
+                            generator.AddCommandNavigate(command.Name + "_" + state.Name, state.Example,
+                                state.ListenFor.Replace("\r", "").Split('\n'),
+                                state.FeedBack,
+                                voiceCommandServiceName);
                         }
                     }
                     if (command.StateList.GroupBy(q => q.Name).Where(w => w.Count() > 1).Count() > 0)
@@ -190,11 +221,33 @@ namespace CortanaCommand.ViewModel
                 this.PassCode = Guid.NewGuid().ToString();
             });
 
+            UpdatePreviewCommand = new RelayCommand(() =>
+            {
+                PreviewCollection.Clear();
+                foreach(var command in CommandList)
+                {
+                    if (command.StateList.Count > 0)
+                    {
+                        var preview = new CommandPreview(
+                            "コマンド「"+command.Name+"」を使用するにはこの発話をしてください",
+                            CommandPrefix+" "+command.StateList.First().FirstListenFor);
+                        PreviewCollection.Add(preview);
+                    }
+                }
+            });
+
+            InitializeCommand = new RelayCommand(()=>
+            {
+                AddCommandCommand.Execute(null);
+            });
+
             CommandPrefix = "コルタナ";
             Example = "こんにちはコルタナ";
             ChangePassCodeCommand.Execute(null);
 
             ListWidth = 340;
+
+            PreviewCollection = new ObservableCollection<CommandPreview>();
         }
 
         public void UpdateListWidth(double width)

@@ -10,6 +10,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.System;
 using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
@@ -157,6 +158,11 @@ namespace CortanaCommand
             {
                 splitView.IsPaneOpen = false;
             }
+        }
+
+        private async void appButtonHelp_Click(object sender, RoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri("https://github.com/garicchi/CortanaCommand/wiki"));
         }
     }
 

@@ -1,4 +1,5 @@
 ﻿using CortanaCommand.ViewModel;
+using CortanaCommandCore.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -55,6 +56,12 @@ namespace CortanaCommand.View.Pages
             if (vm is SuccessStateViewModel)
             {
                 App.NavigateFrame(frameState, typeof(SuccessStatePage), vm);
+            }else if (vm is ScriptStateViewModel)
+            {
+                App.NavigateFrame(frameState, typeof(ScriptStateViewModel), vm);
+            }else if (vm is ProtocolStateViewModel)
+            {
+                App.NavigateFrame(frameState, typeof(ProtocolStateViewModel), vm);
             }
         }
     }

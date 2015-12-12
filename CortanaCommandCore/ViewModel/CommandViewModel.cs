@@ -1,4 +1,5 @@
-﻿using GalaSoft.MvvmLight;
+﻿using CortanaCommandCore.ViewModel;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using System;
 using System.Collections.Generic;
@@ -58,6 +59,10 @@ namespace CortanaCommand.ViewModel
 
         public RelayCommand AddSuccessStateCommand { get; set; }
 
+        public RelayCommand AddScriptStateCommand { get; set; }
+
+        public RelayCommand AddProtocolStateCommand { get; set; }
+
         public RelayCommand<StateViewModel> DeleteStateCommand { get; set; }
 
         
@@ -74,29 +79,48 @@ namespace CortanaCommand.ViewModel
 
             AddSuccessStateCommand = new RelayCommand(()=>
             {
-                var list = StateList.Where(q => q.Name.StartsWith("State")).ToList();
-                int maxNum = 0;
-                foreach (var cmd in list)
-                {
-                    var numStr = cmd.Name.Replace("State", "");
-                    int result;
-                    bool isConvert = int.TryParse(numStr, out result);
-                    if (isConvert)
-                    {
-                        if (maxNum < result)
-                        {
-                            maxNum = result;
-                        }
-                    }
-                }
-                maxNum++;
                 var vm = new SuccessStateViewModel();
-                vm.Name = "State"+maxNum;
+                vm.Name = "State" + GetStateMaxNum();
                 this.StateList.Add(vm);
             });
 
-            
-            
+            AddScriptStateCommand = new RelayCommand(() =>
+            {
+                var vm = new ScriptStateViewModel();
+                vm.Name = "State" + GetStateMaxNum();
+                this.StateList.Add(vm);
+            });
+
+            AddProtocolStateCommand = new RelayCommand(() =>
+            {
+                var vm = new ScriptStateViewModel();
+                vm.Name = "State" + GetStateMaxNum();
+                this.StateList.Add(vm);
+            });
+
+
+
+        }
+
+        private int GetStateMaxNum()
+        {
+            var list = StateList.Where(q => q.Name.StartsWith("State")).ToList();
+            int maxNum = 0;
+            foreach (var cmd in list)
+            {
+                var numStr = cmd.Name.Replace("State", "");
+                int result;
+                bool isConvert = int.TryParse(numStr, out result);
+                if (isConvert)
+                {
+                    if (maxNum < result)
+                    {
+                        maxNum = result;
+                    }
+                }
+            }
+            maxNum++;
+            return maxNum;
         }
 
         

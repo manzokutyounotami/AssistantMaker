@@ -32,9 +32,23 @@
                 </StackPanel>
             </PivotItem>
             <PivotItem Header="このアプリについて">
-                <Grid>
-                    <TextBlock Text="ここにこのアプリの説明を書きます" TextWrapping="Wrap" />
-                </Grid>
+                <StackPanel Orientation="Vertical">
+                    <RichTextBlock TextWrapping="Wrap" >
+                        <Paragraph>
+                            <Run Text="このアプリは"/>
+                            <Hyperlink NavigateUri="http://twitter.com/garicchi" Foreground="{StaticResource ApplicationThemeBrush}">
+                                <Run Text="@garicchi"/>
+                            </Hyperlink>
+                            <Run Text="によって開発されています"></Run>
+                        </Paragraph>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://github.com/garicchi/CortanaCommand" Foreground="{StaticResource ApplicationThemeBrush}">
+                                <Run>GitHub</Run>
+                            </Hyperlink>
+                            <Run Text="にてソースコードを公開しています"></Run>
+                        </Paragraph>
+                    </RichTextBlock>
+                </StackPanel>
             </PivotItem>
         </Pivot>
 

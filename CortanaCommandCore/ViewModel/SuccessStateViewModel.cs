@@ -27,7 +27,8 @@ namespace CortanaCommand.ViewModel
 
         public SuccessStateViewModel()
         {
-            
+            Utterance = "";
+            StateCategory = "正常応答状態";   
         }
 
         

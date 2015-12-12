@@ -1,5 +1,6 @@
 ﻿using CortanaCommand.ViewModel;
 using CortanaCommandCore.Model;
+using CortanaCommandCore.ViewModel;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ using Windows.ApplicationModel.VoiceCommands;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.System;
 using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
@@ -78,6 +80,10 @@ namespace CortanaCommand
             if (vm != null)
             {
                 ViewModel = vm;
+            }
+            else
+            {
+                ViewModel.InitializeCommand.Execute(null);
             }
             ViewModel.OnRegisterVoiceCommand += async (xml) =>
             {
@@ -188,6 +194,36 @@ namespace CortanaCommand
                         break;
                 }
                 OnChangeAppState(StateManager.CurrentState,prevState);
+            }
+        }
+
+        protected async override void OnActivated(IActivatedEventArgs args)
+        {
+            base.OnActivated(args);
+
+            if(args.Kind == ActivationKind.VoiceCommand)
+            {
+                var commandArgs = args as VoiceCommandActivatedEventArgs;
+
+                var speechRecognitionResult = commandArgs.Result;
+                
+                string voiceCommandName = speechRecognitionResult.RulePath[0];
+                string textSpoken = speechRecognitionResult.Text;
+                var cols = voiceCommandName.Split('_');
+                var commandName = cols[0];
+                var stateName = cols[1];
+                var vm = await DataLoadAsync();
+                if (vm != null)
+                {
+                    var state = vm.CommandList.First(q => q.Name == commandName).StateList.First(q=>q.Name == stateName);
+                    if (state is ProtocolStateViewModel)
+                    {
+                        var protocolState = state as ProtocolStateViewModel;
+                        await Launcher.LaunchUriAsync(new Uri(protocolState.Protocol));
+                    }
+                }
+
+                this.Exit();
             }
         }
 

@@ -62,7 +62,9 @@
                     <AppBarButton Icon="Add">
                         <AppBarButton.Flyout>
                             <MenuFlyout>
-                                <MenuFlyoutItem Text="正常応答" Command="{Binding AddSuccessStateCommand}" />
+                                <MenuFlyoutItem Text="正常応答状態" Command="{Binding AddSuccessStateCommand}" />
+                                <MenuFlyoutItem Text="スクリプト実行状態" Command="{Binding AddScriptStateCommand}" />
+                                <MenuFlyoutItem Text="UWP連携状態" Command="{Binding AddProtocolStateCommand}" />
                             </MenuFlyout>
                         </AppBarButton.Flyout>
                     </AppBarButton>

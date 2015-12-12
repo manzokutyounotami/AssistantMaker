@@ -1,5 +1,6 @@
 ﻿using CortanaCommand.ViewModel;
 using CortanaCommandCore.Model;
+using CortanaCommandCore.ViewModel;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -56,9 +57,23 @@ namespace CortanaCommandService
                     {
                         commandViewModel.CurrentStateNum = 0;
                     }
-                    if(stateViewModel is CortanaCommand.ViewModel.SuccessStateViewModel)
+
+                    if(stateViewModel is SuccessStateViewModel)
                     {
-                        SuccessStateViewModel state = stateViewModel as SuccessStateViewModel;
+                        var state = stateViewModel as ScriptStateViewModel;
+                        if (string.IsNullOrEmpty(state.Utterance))
+                        {
+                            state.Utterance = "";
+                        }
+                        var message = new VoiceCommandUserMessage();
+                        message.SpokenMessage = state.Utterance;
+                        message.DisplayMessage = state.Utterance;
+                        var response = VoiceCommandResponse.CreateResponse(message);
+                        await voiceServiceConnection.ReportSuccessAsync(response);
+                    }
+                    else if(stateViewModel is ScriptStateViewModel)
+                    {
+                        var state = stateViewModel as ScriptStateViewModel;
                         if (!string.IsNullOrEmpty(state.Script))
                         {
                             try {
@@ -90,20 +105,6 @@ namespace CortanaCommandService
                             }
                         }
 
-                        if (!string.IsNullOrEmpty(state.Protocol))
-                        {
-                            var result = await Launcher.LaunchUriAsync(new Uri(state.Protocol));
-                            if (!result)
-                            {
-                                var errorMsg = new VoiceCommandUserMessage();
-                                string msg = "プロトコル起動を試みましたがURLが間違っているようです";
-                                errorMsg.SpokenMessage = msg;
-                                errorMsg.DisplayMessage = msg;
-                                var errorResponse = VoiceCommandResponse.CreateResponse(errorMsg);
-                                await voiceServiceConnection.ReportFailureAsync(errorResponse);
-                                return;
-                            }
-                        }
 
                         if (string.IsNullOrEmpty(state.Utterance))
                         {
@@ -114,7 +115,6 @@ namespace CortanaCommandService
                         message.DisplayMessage = state.Utterance;
                         var response = VoiceCommandResponse.CreateResponse(message);
                         await voiceServiceConnection.ReportSuccessAsync(response);
-                        
                     }
 
                     await DataSaveAsync(viewModel);

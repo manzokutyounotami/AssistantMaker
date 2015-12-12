@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="AddProtocolStateCommand" />
+    <RootPropertyPathName Name="AddScriptStateCommand" />
     <RootPropertyPathName Name="AddSuccessStateCommand" />
     <RootPropertyPathName Name="StateList" />
     <RootPropertyPathName Name="Name" />
@@ -10,11 +12,16 @@
     <RootPropertyPathName Name="CommandList" />
     <RootPropertyPathName Name="UpdateCortanaCommand" />
     <RootPropertyPathName Name="IsPaneOpen" />
-    <RootPropertyPathName Name="Script" />
+    <RootPropertyPathName Name="PreviewCollection" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="Protocol" />
     <RootPropertyPathName Name="Utterance" />
     <RootPropertyPathName Name="FeedBack" />
     <RootPropertyPathName Name="Example" />
     <RootPropertyPathName Name="ListenFor" />
+    <RootPropertyPathName Name="StateCategory" />
+    <RootPropertyPathName Name="Script" />
     <RootPropertyPathName Name="ChangePassCodeCommand" />
     <RootPropertyPathName Name="PassCode" />
     <RootPropertyPathName Name="CommandPrefix" />
@@ -323,6 +330,8 @@
     </RootType>
     <RootType FullName="CortanaCommand.MainPage" />
     <RootType FullName="CortanaCommand.View.Pages.PreviewPage" />
+    <RootType FullName="CortanaCommand.View.Pages.ProtocolStatePage" />
+    <RootType FullName="CortanaCommand.View.Pages.ScriptStatePage" />
     <RootType FullName="CortanaCommand.View.Pages.SuccessStatePage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Items" />
@@ -330,6 +339,21 @@
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Blocks" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Paragraph">
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Hyperlink">
+      <RootProperty Name="NavigateUri" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />

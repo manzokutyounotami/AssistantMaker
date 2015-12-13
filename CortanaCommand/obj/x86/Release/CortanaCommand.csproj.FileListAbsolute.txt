@@ -528,3 +528,4 @@ C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\obj\
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\Newtonsoft.Json.dll
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\obj\x86\Release\ilc\intermediate\rhbindargs.CortanaCommand.rsp
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\obj\x86\Release\ilc\intermediate\sgargs.rsp
+C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Release\Upload\CortanaCommand.build.appxrecipe

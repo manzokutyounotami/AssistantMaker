@@ -60,7 +60,7 @@ namespace CortanaCommandService
 
                     if(stateViewModel is SuccessStateViewModel)
                     {
-                        var state = stateViewModel as ScriptStateViewModel;
+                        var state = stateViewModel as SuccessStateViewModel;
                         if (string.IsNullOrEmpty(state.Utterance))
                         {
                             state.Utterance = "";

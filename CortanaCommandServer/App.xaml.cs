@@ -23,23 +23,31 @@ namespace CortanaCommandServer
             ViewModel = new ServerViewModel();
         }
 
-        protected override void OnActivated(EventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnActivated(e);
+            base.OnStartup(e);
             StreamReader reader = null;
-            try {
+            try
+            {
                 if (File.Exists(_saveFileName))
                 {
                     reader = new StreamReader(_saveFileName);
                     var json = reader.ReadToEndAsync().Result;
-                    ViewModel.Setting = (ServerSetting)JsonConvert.DeserializeObject(json,typeof(ServerSetting));
+                    ViewModel.Setting = (ServerSetting)JsonConvert.DeserializeObject(json, typeof(ServerSetting));
                     reader.Close();
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
                 reader.Close();
             }
+        }
+
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+            
         }
 
         protected override void OnExit(ExitEventArgs e)

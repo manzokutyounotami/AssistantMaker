@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-en"
+"ResourceDimensions"		"language-en-us"
+
+[Files]
+"C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\obj\x86\Release\split.language-en.pri"			"resources.pri"

@@ -1,0 +1,4 @@
+C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\CortanaCommand.csproj;arm
+C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\CortanaCommandCore.csproj;neutral
+C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\CortanaCommandCore.csproj;neutral
+C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\CortanaCommandService.csproj;arm

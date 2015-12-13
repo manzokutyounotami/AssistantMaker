@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="44a5453b-2e98-4da4-9078-a708a7a7c2af" Publisher="CN=garic" Version="1.0.0.0" />
+  <Identity Name="19949.CortanaCommand" Publisher="CN=CF40A707-AFBE-40AD-9934-854693E11B83" Version="1.1.5.0" />
   <mp:PhoneIdentity PhoneProductId="44a5453b-2e98-4da4-9078-a708a7a7c2af" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>CortanaCommand</DisplayName>
-    <PublisherDisplayName>garic</PublisherDisplayName>
+    <PublisherDisplayName>がりっち</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -19,6 +19,12 @@
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#4c6cb3" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="portraitFlipped" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
       <Extensions>
         <uap:Extension Category="windows.appService" EntryPoint="CortanaCommandService.CommandService">

@@ -14,7 +14,7 @@ namespace CortanaCommand
         public AppStateManager()
         {
             StateList = new Dictionary<AppState, double>();
-            
+            CurrentState = AppState.Init;
         }
 
         public bool TryChangeState(double windowWidth)

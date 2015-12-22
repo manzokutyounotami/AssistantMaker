@@ -10,25 +10,25 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>44a5453b-2e98-4da4-9078-a708a7a7c2af</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>6B390B963630214B700D8F13EE62BDC11084DB8E090F75A8CE9F394154C1B2BF</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>19949.CortanaCommand_1.1.0.0_x86__rkh89mzkgw3z4</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>19949.CortanaCommand_rkh89mzkgw3z4!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>19949.CortanaCommand</RegisteredPackageID>
+    <RegisteredManifestChecksum>3EE3CDDA90ABCA8989176A5AFC80159EE49B50F90726461073EDE85124ED21E5</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>19949.21959A96CD070_1.1.5.0_x86__rkh89mzkgw3z4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>19949.21959A96CD070_rkh89mzkgw3z4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>19949.21959A96CD070</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=CF40A707-AFBE-40AD-9934-854693E11B83</RegisteredPackagePublisher>
-    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <RegisteredVersion>1.1.5.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-12T16:34:35.941</Modified>
+      <Modified>2015-12-20T15:55:30.455</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\CortanaCommand.exe">
       <PackagePath>entrypoint\CortanaCommand.exe</PackagePath>
-      <Modified>2015-12-12T16:34:30.458</Modified>
+      <Modified>2015-12-20T15:55:27.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -476,11 +476,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\bin\Debug\CortanaCommandCore.dll">
       <PackagePath>CortanaCommandCore.dll</PackagePath>
-      <Modified>2015-12-12T14:37:24.132</Modified>
+      <Modified>2015-12-20T12:52:34.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\bin\Debug\CortanaCommandService.winmd">
       <PackagePath>CortanaCommandService.winmd</PackagePath>
-      <Modified>2015-12-12T16:34:25.210</Modified>
+      <Modified>2015-12-20T12:52:35.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
@@ -725,19 +725,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\CortanaCommand.xr.xml">
       <PackagePath>CortanaCommand.xr.xml</PackagePath>
-      <Modified>2015-12-12T13:22:57.093</Modified>
+      <Modified>2015-12-20T12:43:32.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2015-12-10T14:12:19.917</Modified>
+      <Modified>2015-12-14T18:11:17.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-12T16:19:51.689</Modified>
+      <Modified>2015-12-20T15:55:27.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Debug\Core\CortanaCommand.exe">
       <PackagePath>CortanaCommand.exe</PackagePath>
-      <Modified>2015-12-12T16:34:35.903</Modified>
+      <Modified>2015-12-20T15:55:30.451</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

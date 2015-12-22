@@ -79,6 +79,15 @@ namespace CortanaCommand.ViewModel
 
         private string _stateCategory;
 
+        private string _uniqueId;
+
+        public string UniqueId
+        {
+            get { return _uniqueId; }
+            set { this.Set(ref _uniqueId, value); }
+        }
+        
+
         public string StateCategory
         {
             get { return _stateCategory; }
@@ -93,6 +102,7 @@ namespace CortanaCommand.ViewModel
             ListenFor = "[こんにちは]コルタナ";
             FeedBack = ".";
             StateCategory = "";
+            this.UniqueId = Guid.NewGuid().ToString();
         }
 
         

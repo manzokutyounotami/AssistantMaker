@@ -46,8 +46,8 @@
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="指定したアドレスにブラウザでアクセスします" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="UWPのプロトコル機能で別UWPアプリと連携できます" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="必要ない場合は空欄にします" VerticalAlignment="Top" Foreground="White" FontSize="{StaticResource ContentDescriptionSize}" Margin="20,0,0,0"/>
-                
-                <TextBox Text="{Binding Protocol,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" PlaceholderText="(例) microsoft-edge:http://garicchi.com" />
+
+                <TextBox Text="{Binding Protocol,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" PlaceholderText="(例) ms-settings:" />
                 
                 
             </StackPanel>

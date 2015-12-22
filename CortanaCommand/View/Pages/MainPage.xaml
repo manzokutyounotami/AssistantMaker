@@ -89,7 +89,11 @@
         </SplitView>
         <CommandBar HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Top" Background="{x:Null}" Grid.RowSpan="2" >
             <CommandBar.PrimaryCommands>
+                <AppBarButton>
+                    <ProgressRing x:Name="progressUpdating" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsActive="false" ></ProgressRing>
+                </AppBarButton>
                 <AppBarButton Icon="Upload" Label="Update" Foreground="White" Command="{Binding UpdateCortanaCommand}"/>
+                
             </CommandBar.PrimaryCommands>
         </CommandBar>
         

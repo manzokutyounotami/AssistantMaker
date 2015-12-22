@@ -42,7 +42,7 @@ namespace CortanaCommandCore.ViewModel
         public ScriptStateViewModel()
         {
             Utterance = "";
-            Script = "";
+            Script = "Get-ChildItem";
             StateCategory = "スクリプト実行状態";   
         }
     }

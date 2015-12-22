@@ -115,6 +115,7 @@ namespace CortanaCommand.ViewModel
             }
         }
 
+
         public RelayCommand AddCommandCommand{ get; set; }
 
         public RelayCommand<CommandViewModel> DeleteCommandCommand { get; set; }
@@ -166,6 +167,7 @@ namespace CortanaCommand.ViewModel
 
             UpdateCortanaCommand = new RelayCommand(()=>
             {
+                
                 if (CommandList.GroupBy(q => q.Name).Where(w => w.Count() > 1).Count() > 0)
                 {
                     Messenger.Default.Send<string>("Commandの名前が重複しています","error");
@@ -203,12 +205,12 @@ namespace CortanaCommand.ViewModel
                         return;
                     }
                 }
-
+                Messenger.Default.Send<bool>(true, "updating");
                 var xml = generator.GenerateXml();
                 CurrentXml = xml;
                 //Debug.Write(xml);
                 OnRegisterVoiceCommand(xml);
-                
+                Messenger.Default.Send<bool>(false, "updating");
             });
 
             OnRegisterVoiceCommand += e =>
@@ -223,6 +225,7 @@ namespace CortanaCommand.ViewModel
 
             UpdatePreviewCommand = new RelayCommand(() =>
             {
+
                 PreviewCollection.Clear();
                 foreach(var command in CommandList)
                 {

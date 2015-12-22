@@ -25,9 +25,22 @@ namespace CortanaCommand.View.Pages
     public sealed partial class CommandPage : Page
     {
         CommandViewModel _viewModel;
+        string _rightTappedGuid;
         public CommandPage()
         {
             this.InitializeComponent();
+            Window.Current.SizeChanged += (s, e) =>
+            {
+                ResizeContentWidth();
+            };
+        }
+
+        private void ResizeContentWidth()
+        {
+            if (App.StateManager.CurrentState == AppState.Mobile)
+            {
+                listColumn.Width = new GridLength(Window.Current.Bounds.Width);
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -35,18 +48,30 @@ namespace CortanaCommand.View.Pages
             base.OnNavigatedTo(e);
             this._viewModel = e.Parameter as CommandViewModel;
             this.DataContext = _viewModel;
+            ResizeContentWidth();
         }
 
         private void menuItemState_Click(object sender, RoutedEventArgs e)
         {
-            if(listBoxState.SelectedIndex != -1)
-            {
-                _viewModel.DeleteStateCommand.Execute(listBoxState.SelectedItem);
-            }
+            var rightTappedItem = _viewModel.StateList.First(q => q.UniqueId == _rightTappedGuid);
+            _viewModel.DeleteStateCommand.Execute(rightTappedItem);
         }
 
         private void Grid_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
+            var grid = sender as Grid;
+            var childCount = VisualTreeHelper.GetChildrenCount(grid);
+            for (int i = 0; i < childCount; i++)
+            {
+                var child = VisualTreeHelper.GetChild(grid, i);
+                if (child is TextBlock)
+                {
+                    if (child.GetValue(TextBlock.NameProperty).ToString() == "text_uniqueId")
+                    {
+                        _rightTappedGuid = child.GetValue(TextBlock.TextProperty).ToString();
+                    }
+                }
+            }
             FlyoutBase.ShowAttachedFlyout(sender as Grid);
         }
 

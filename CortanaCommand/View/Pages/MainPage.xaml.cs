@@ -61,6 +61,17 @@ namespace CortanaCommand
                 var dialog = new MessageDialog(message,"error");
                 await dialog.ShowAsync();
             });
+            Messenger.Default.Register<bool>("","updating",(bol)=> 
+            {
+                if (bol)
+                {
+                    progressUpdating.IsActive = true;
+                }
+                else
+                {
+                    progressUpdating.IsActive = false;
+                }
+            });
 
             this.DataContext = App.ViewModel;
             

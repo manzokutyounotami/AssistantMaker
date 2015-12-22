@@ -51,7 +51,7 @@
                 <ColumnDefinition Width="270"/>
             </Grid.ColumnDefinitions>
             <!--SplitViewの開閉を行うToglleButton SplitViewのIsOpenPaneプロパティとバインドされているのでボタンを押すとSplitViewが開閉する-->
-            <ToggleButton x:ConnectionId='13' x:Name="paneButton" Width="48" Height="48" Grid.Column="0" Style="{StaticResource SplitViewToggleButtonStyle}" IsChecked="{Binding ElementName=splitView,Path=IsPaneOpen,Mode=TwoWay}">
+            <ToggleButton x:ConnectionId='14' x:Name="paneButton" Width="48" Height="48" Grid.Column="0" Style="{StaticResource SplitViewToggleButtonStyle}" IsChecked="{Binding ElementName=splitView,Path=IsPaneOpen,Mode=TwoWay}">
                 <FontIcon Glyph="{StaticResource SplitViewButtonGlyph}" Foreground="White" />
             </ToggleButton>
             <!--検索ボックス-->
@@ -69,27 +69,31 @@
 
                     <!--SplitViewのPaneにあるナビゲーションボタン 特殊なAppBarButtonのStyleを適用している。詳しくはApp.xaml.cs-->
                     <StackPanel Orientation="Vertical" Grid.Row="0">
-                        <AppBarButton x:ConnectionId='8' x:Name="appButtonEditor" Foreground="White" Icon="Microphone" Label="コマンドエディタ" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                               />
-                        <AppBarButton x:ConnectionId='9' x:Name="appButtonXml" Foreground="White" Icon="Page2" Label="登録済みXML" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                            />
-                        <AppBarButton x:ConnectionId='10' x:Name="appButtonPreview" Foreground="White" Icon="Volume" Label="発話例" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                                />
-                        <AppBarButton x:ConnectionId='11' x:Name="appButtonHelp" Icon="Help" Label="使い方" Foreground="White" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                            ></AppBarButton>
+                        <AppBarButton x:ConnectionId='9' x:Name="appButtonEditor" Foreground="White" Icon="Microphone" Label="コマンドエディタ" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                               />
+                        <AppBarButton x:ConnectionId='10' x:Name="appButtonXml" Foreground="White" Icon="Page2" Label="登録済みXML" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                            />
+                        <AppBarButton x:ConnectionId='11' x:Name="appButtonPreview" Foreground="White" Icon="Volume" Label="発話例" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                                />
+                        <AppBarButton x:ConnectionId='12' x:Name="appButtonHelp" Icon="Help" Label="使い方" Foreground="White" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                            ></AppBarButton>
                     </StackPanel>
 
                     <!--SplitViewのPaneにある設定ボタン-->
                     <StackPanel Orientation="Vertical" Grid.Row="1">
                         <Rectangle Height="1" Fill="#FF5F5F5F" />
-                        <AppBarButton x:ConnectionId='7' x:Name="appButtonSetting" Foreground="White" Icon="Setting" Label="設定" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                                />
+                        <AppBarButton x:ConnectionId='8' x:Name="appButtonSetting" Foreground="White" Icon="Setting" Label="設定" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto"                                />
                     </StackPanel>
                 </Grid>
             </SplitView.Pane>
             <!--<ScrollViewer HorizontalScrollBarVisibility="Auto" HorizontalScrollMode="Auto">-->
                 <!--このFrameにいろいろなページをNavigateすることでページを切り替える-->
-                <Frame x:ConnectionId='12' x:Name="frameContent" MinWidth="800"></Frame>
+                <Frame x:ConnectionId='13' x:Name="frameContent" MinWidth="800"></Frame>
             <!--</ScrollViewer>-->
         </SplitView>
         <CommandBar HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Top" Background="{x:Null}" Grid.RowSpan="2" >
             <CommandBar.PrimaryCommands>
+                <AppBarButton>
+                    <ProgressRing x:ConnectionId='7' x:Name="progressUpdating" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsActive="false" ></ProgressRing>
+                </AppBarButton>
                 <AppBarButton Icon="Upload" Label="Update" Foreground="White" Command="{Binding UpdateCortanaCommand}"/>
+                
             </CommandBar.PrimaryCommands>
         </CommandBar>
         

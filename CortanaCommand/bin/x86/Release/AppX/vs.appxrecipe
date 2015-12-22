@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>44a5453b-2e98-4da4-9078-a708a7a7c2af</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\obj\x86\Release\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>CB0CF2283B48980AB8DF9597243D5DC59A91C01F293653413C5F2E0B5FA2CC0E</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>44a5453b-2e98-4da4-9078-a708a7a7c2af_1.0.0.0_x86__nyzkzmv40p520</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>44a5453b-2e98-4da4-9078-a708a7a7c2af_nyzkzmv40p520!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>44a5453b-2e98-4da4-9078-a708a7a7c2af</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=garic</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>122F796DE95C2026DF1165658D076538EEFFA31C3D5D646EBC21D531746C5308</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>19949.21959A96CD070_1.1.5.0_x86__rkh89mzkgw3z4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>19949.21959A96CD070_rkh89mzkgw3z4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>19949.21959A96CD070</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=CF40A707-AFBE-40AD-9934-854693E11B83</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.5.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-12T13:35:33.788</Modified>
+      <Modified>2015-12-20T13:14:28.181</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -269,27 +269,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Release\ilc\CortanaCommand.dll">
       <PackagePath>CortanaCommand.dll</PackagePath>
-      <Modified>2015-12-12T13:35:32.993</Modified>
+      <Modified>2015-12-20T13:14:27.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Release\ilc\CortanaCommand.exe">
       <PackagePath>CortanaCommand.exe</PackagePath>
-      <Modified>2015-12-12T13:35:33.760</Modified>
+      <Modified>2015-12-20T13:14:28.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Release\ilc\CortanaCommandService.winmd">
       <PackagePath>CortanaCommandService.winmd</PackagePath>
-      <Modified>2015-12-12T13:33:50.719</Modified>
+      <Modified>2015-12-20T13:10:39.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-12T13:34:16.996</Modified>
+      <Modified>2015-12-20T13:13:21.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Release\ilc\_Resources\0.rsrc">
       <PackagePath>_Resources\0.rsrc</PackagePath>
-      <Modified>2015-12-12T13:34:54.489</Modified>
+      <Modified>2015-12-20T13:13:53.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\bin\x86\Release\ilc\_Resources\index.txt">
       <PackagePath>_Resources\index.txt</PackagePath>
-      <Modified>2015-12-12T13:34:54.497</Modified>
+      <Modified>2015-12-20T13:13:53.645</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

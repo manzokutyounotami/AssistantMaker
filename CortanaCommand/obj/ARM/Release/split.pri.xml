@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <PriInfo>
-	<ResourceMap name="19949.CortanaCommand" version="1.0" primary="true">
+	<ResourceMap name="19949.21959A96CD070" version="1.0" primary="true">
 		<Qualifiers>
 			<Scale>200</Scale>
 			<TargetSize>256,16,24,48</TargetSize>
 		</Qualifiers>
 		<ResourceMapSubtree name="Files">
-			<NamedResource name="App.xbf" uri="ms-resource://19949.CortanaCommand/Files/App.xbf">
+			<NamedResource name="App.xbf" uri="ms-resource://19949.21959A96CD070/Files/App.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
-			<NamedResource name="ApplicationInsights.config" uri="ms-resource://19949.CortanaCommand/Files/ApplicationInsights.config">
+			<NamedResource name="ApplicationInsights.config" uri="ms-resource://19949.21959A96CD070/Files/ApplicationInsights.config">
 				<Candidate type="Path">
 					<Value>ApplicationInsights.config</Value>
 				</Candidate>
 			</NamedResource>
-			<NamedResource name="CortanaCommand.xr.xml" uri="ms-resource://19949.CortanaCommand/Files/CortanaCommand.xr.xml">
+			<NamedResource name="CortanaCommand.xr.xml" uri="ms-resource://19949.21959A96CD070/Files/CortanaCommand.xr.xml">
 				<Candidate type="Path">
 					<Value>CortanaCommand.xr.xml</Value>
 				</Candidate>
 			</NamedResource>
 			<ResourceMapSubtree name="Assets">
-				<NamedResource name="BadgeLogo.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/BadgeLogo.png">
+				<NamedResource name="BadgeLogo.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/BadgeLogo.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\BadgeLogo.scale-200.png</Value>
 					</Candidate>
@@ -30,32 +30,32 @@
 						<Value>Assets\BadgeLogo.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="LockScreenLogo.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/LockScreenLogo.png">
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/LockScreenLogo.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\LockScreenLogo.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="Slide.xml" uri="ms-resource://19949.CortanaCommand/Files/Assets/Slide.xml">
+				<NamedResource name="Slide.xml" uri="ms-resource://19949.21959A96CD070/Files/Assets/Slide.xml">
 					<Candidate type="Path">
 						<Value>Assets\Slide.xml</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="SplashScreen.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/SplashScreen.png">
+				<NamedResource name="SplashScreen.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/SplashScreen.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\SplashScreen.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="Square150x150Logo.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/Square150x150Logo.png">
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/Square150x150Logo.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\Square150x150Logo.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="Square310x310Logo.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/Square310x310Logo.png">
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/Square310x310Logo.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\Square310x310Logo.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="Square44x44Logo.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/Square44x44Logo.png">
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/Square44x44Logo.png">
 					<Candidate qualifiers="TargetSize-48" isDefault="true" type="Path">
 						<Value>Assets\Square44x44Logo.targetsize-48.png</Value>
 					</Candidate>
@@ -72,24 +72,24 @@
 						<Value>Assets\Square44x44Logo.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="Square71x71Logo.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/Square71x71Logo.png">
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/Square71x71Logo.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\Square71x71Logo.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="StoreLogo.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/StoreLogo.png">
+				<NamedResource name="StoreLogo.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/StoreLogo.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\StoreLogo.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://19949.CortanaCommand/Files/Assets/Wide310x150Logo.png">
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://19949.21959A96CD070/Files/Assets/Wide310x150Logo.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
 			<ResourceMapSubtree name="Properties">
-				<NamedResource name="Default.rd.xml" uri="ms-resource://19949.CortanaCommand/Files/Properties/Default.rd.xml">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://19949.21959A96CD070/Files/Properties/Default.rd.xml">
 					<Candidate type="Path">
 						<Value>Properties\Default.rd.xml</Value>
 					</Candidate>
@@ -97,47 +97,47 @@
 			</ResourceMapSubtree>
 			<ResourceMapSubtree name="View">
 				<ResourceMapSubtree name="Pages">
-					<NamedResource name="CommandPage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/CommandPage.xbf">
+					<NamedResource name="CommandPage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/CommandPage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
-					<NamedResource name="CurrentXmlPage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/CurrentXmlPage.xbf">
+					<NamedResource name="CurrentXmlPage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/CurrentXmlPage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
-					<NamedResource name="HomePage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/HomePage.xbf">
+					<NamedResource name="HomePage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/HomePage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
-					<NamedResource name="MainPage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/MainPage.xbf">
+					<NamedResource name="MainPage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/MainPage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
-					<NamedResource name="PreviewPage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/PreviewPage.xbf">
+					<NamedResource name="PreviewPage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/PreviewPage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
-					<NamedResource name="ProtocolStatePage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/ProtocolStatePage.xbf">
+					<NamedResource name="ProtocolStatePage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/ProtocolStatePage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
-					<NamedResource name="ScriptStatePage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/ScriptStatePage.xbf">
+					<NamedResource name="ScriptStatePage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/ScriptStatePage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
-					<NamedResource name="SettingPage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/SettingPage.xbf">
+					<NamedResource name="SettingPage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/SettingPage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
-					<NamedResource name="SuccessStatePage.xbf" uri="ms-resource://19949.CortanaCommand/Files/View/Pages/SuccessStatePage.xbf">
+					<NamedResource name="SuccessStatePage.xbf" uri="ms-resource://19949.21959A96CD070/Files/View/Pages/SuccessStatePage.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
@@ -145,7 +145,7 @@
 				</ResourceMapSubtree>
 			</ResourceMapSubtree>
 			<ResourceMapSubtree name="WinMetadata">
-				<NamedResource name="Windows.winmd" uri="ms-resource://19949.CortanaCommand/Files/WinMetadata/Windows.winmd">
+				<NamedResource name="Windows.winmd" uri="ms-resource://19949.21959A96CD070/Files/WinMetadata/Windows.winmd">
 					<Candidate type="Path">
 						<Value>WinMetadata\Windows.winmd</Value>
 					</Candidate>
@@ -153,9 +153,9 @@
 			</ResourceMapSubtree>
 		</ResourceMapSubtree>
 		<ResourceMapSubtree name="Microsoft.Practices.ServiceLocation.Properties.Resources">
-			<NamedResource name="ActivateAllExceptionMessage" uri="ms-resource://19949.CortanaCommand/Microsoft.Practices.ServiceLocation.Properties.Resources/ActivateAllExceptionMessage"/>
-			<NamedResource name="ActivationExceptionMessage" uri="ms-resource://19949.CortanaCommand/Microsoft.Practices.ServiceLocation.Properties.Resources/ActivationExceptionMessage"/>
-			<NamedResource name="ServiceLocationProviderNotSetMessage" uri="ms-resource://19949.CortanaCommand/Microsoft.Practices.ServiceLocation.Properties.Resources/ServiceLocationProviderNotSetMessage"/>
+			<NamedResource name="ActivateAllExceptionMessage" uri="ms-resource://19949.21959A96CD070/Microsoft.Practices.ServiceLocation.Properties.Resources/ActivateAllExceptionMessage"/>
+			<NamedResource name="ActivationExceptionMessage" uri="ms-resource://19949.21959A96CD070/Microsoft.Practices.ServiceLocation.Properties.Resources/ActivationExceptionMessage"/>
+			<NamedResource name="ServiceLocationProviderNotSetMessage" uri="ms-resource://19949.21959A96CD070/Microsoft.Practices.ServiceLocation.Properties.Resources/ServiceLocationProviderNotSetMessage"/>
 		</ResourceMapSubtree>
 	</ResourceMap>
 </PriInfo>

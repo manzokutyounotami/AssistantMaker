@@ -18,3 +18,4 @@ C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandServi
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\obj\ARM\Release\qualifiers.txt
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\obj\ARM\Release\qualifiers.txt.intermediate
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\obj\ARM\Release\CortanaCommandService.csprojResolveAssemblyReference.cache

@@ -2,4 +2,3 @@ C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\bin\Release\CortanaCommandCore.pdb
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Release\CortanaCommandCore.dll
 C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Release\CortanaCommandCore.pdb
-C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\obj\Release\CortanaCommandCore.csprojResolveAssemblyReference.cache

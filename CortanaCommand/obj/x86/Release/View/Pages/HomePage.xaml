@@ -17,7 +17,7 @@
 
     <Grid Background="{StaticResource ApplicationThemeBrush}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition x:ConnectionId='1' x:Name="listColumn" Width="340"/>
+            <ColumnDefinition x:ConnectionId='1' x:Name="listColumn" Width="240"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid x:ConnectionId='2' x:Name="gridList" Grid.Column="0" Background="White">
@@ -28,7 +28,7 @@
             <Grid Grid.Row="0" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1">
                 <TextBlock x:ConnectionId='7' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Command" VerticalAlignment="Center" Foreground="{StaticResource ApplicationThemeBrush}" FontSize="21.333"/>
             </Grid>
-            <ListView x:ConnectionId='4' x:Name="listBox_command" Margin="0" Grid.Row="1" Background="White" ItemsSource="{Binding CommandList}" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1" CanDragItems="True" CanReorderItems="True" ReorderMode="Enabled" CanDrag="True" AllowDrop="True"                                       IsItemClickEnabled="True">
+            <ListView x:ConnectionId='4' x:Name="listBox_command" Margin="0" Grid.Row="1" Background="White" ItemsSource="{Binding CommandList}" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1" CanDragItems="True" CanReorderItems="True" ReorderMode="Enabled" CanDrag="True" AllowDrop="True"                                       IsItemClickEnabled="True" ItemContainerStyle="{StaticResource ListViewItemStyle}" >
                 <ListView.Transitions>
                     <TransitionCollection>
                         <AddDeleteThemeTransition/>
@@ -44,6 +44,7 @@
                                 </MenuFlyout>
                             </FlyoutBase.AttachedFlyout>
                             <TextBlock Text="{Binding Name}" FontSize="18" />
+                            <TextBlock x:Name="text_uniqueId" Text="{Binding UniqueId}" Visibility="Collapsed" />
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>

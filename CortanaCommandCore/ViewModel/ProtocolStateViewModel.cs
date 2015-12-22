@@ -20,7 +20,7 @@ namespace CortanaCommandCore.ViewModel
 
         public ProtocolStateViewModel()
         {
-            this.Protocol = "";
+            this.Protocol = "ms-settings:";
             this.StateCategory = "UWP連携状態";
         }
     }

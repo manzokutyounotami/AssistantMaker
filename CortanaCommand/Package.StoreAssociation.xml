@@ -358,14 +358,15 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>19949.CortanaCommand</MainPackageIdentityName>
+    <MainPackageIdentityName>19949.21959A96CD070</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>CortanaCommand</ReservedName>
+      <ReservedName>俺の秘書育成計画</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
     <MainPackageIdentityName>19949.AppExplainerFree</MainPackageIdentityName>
     <MainPackageIdentityName>19949.AppExplainerPro</MainPackageIdentityName>
+    <MainPackageIdentityName>19949.CortanaCommand</MainPackageIdentityName>
     <MainPackageIdentityName>19949.EightClock</MainPackageIdentityName>
     <MainPackageIdentityName>19949.GaricchiComViewer</MainPackageIdentityName>
     <MainPackageIdentityName>19949.GaricchiCom</MainPackageIdentityName>
@@ -397,5 +398,5 @@
     <MainPackageIdentityName>19949.604950470FF7D</MainPackageIdentityName>
     <MainPackageIdentityName>19949.23873493FEA61</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGH5C8MN" />
+  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGH58QNH" />
 </StoreAssociation>

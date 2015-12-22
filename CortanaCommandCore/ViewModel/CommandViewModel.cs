@@ -42,6 +42,15 @@ namespace CortanaCommand.ViewModel
             }
         }
 
+        private string _uniqueId;
+
+        public string UniqueId
+        {
+            get { return _uniqueId; }
+            set { this.Set(ref _uniqueId, value); }
+        }
+
+
         public ObservableCollection<StateViewModel> StateList
         {
             get
@@ -98,7 +107,7 @@ namespace CortanaCommand.ViewModel
                 this.StateList.Add(vm);
             });
 
-
+            UniqueId = Guid.NewGuid().ToString();
 
         }
 

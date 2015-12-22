@@ -8,6 +8,6 @@ namespace CortanaCommand
 {
     public enum AppState
     {
-        Mobile,Normal,Wide
+        Mobile,Normal,Wide,Init
     }
 }

@@ -357,7 +357,7 @@
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandCore\bin\Debug\CortanaCommandCore.dll">
       <PackagePath>CortanaCommandCore.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\bin\Debug\CortanaCommandService.winmd">
+    <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommandService\bin\x86\Debug\CortanaCommandService.winmd">
       <PackagePath>CortanaCommandService.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\CortanaCommand\CortanaCommand\ApplicationInsights.config">

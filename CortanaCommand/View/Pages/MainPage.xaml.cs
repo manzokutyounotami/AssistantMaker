@@ -40,18 +40,19 @@ namespace CortanaCommand
                 switch (state)
                 {
                     case AppState.Mobile:
+                        VisualStateManager.GoToState(this, "MobileState", false);
+
                         App.NavigateFrame(frameContent, typeof(MainPage), null);
 
-                        VisualStateManager.GoToState(this,"MobileState",true);
-                        
                         break;
                     case AppState.Normal:
+                        VisualStateManager.GoToState(this, "NormalState", false);
+
                         App.RootFrame.Navigate(typeof(MainPage));
-                        VisualStateManager.GoToState(this, "NormalState", true);
                         
                         break;
                     case AppState.Wide:
-                        VisualStateManager.GoToState(this, "WideState", true);
+                        VisualStateManager.GoToState(this, "WideState", false);
                         
                         break;
                 }
@@ -84,15 +85,15 @@ namespace CortanaCommand
             {
                 case AppState.Mobile:
                     
-                    VisualStateManager.GoToState(this, "MobileState", true);
+                    VisualStateManager.GoToState(this, "MobileState", false);
 
                     break;
                 case AppState.Normal:
-                    VisualStateManager.GoToState(this, "NormalState", true);
+                    VisualStateManager.GoToState(this, "NormalState", false);
 
                     break;
                 case AppState.Wide:
-                    VisualStateManager.GoToState(this, "WideState", true);
+                    VisualStateManager.GoToState(this, "WideState", false);
 
                     break;
             }

@@ -12,7 +12,6 @@
     <RootPropertyPathName Name="AddCommandCommand" />
     <RootPropertyPathName Name="CommandList" />
     <RootPropertyPathName Name="UpdateCortanaCommand" />
-    <RootPropertyPathName Name="IsUpdating" />
     <RootPropertyPathName Name="IsPaneOpen" />
     <RootPropertyPathName Name="PreviewCollection" />
     <RootPropertyPathName Name="Description" />
@@ -330,7 +329,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="IsActive" />
-      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
       <RootProperty Name="Glyph" />

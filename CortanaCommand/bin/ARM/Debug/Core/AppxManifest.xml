@@ -7,7 +7,7 @@
 
     パッケージ マニフェスト ファイルの詳細については、http://go.microsoft.com/fwlink/?LinkID=241727 を参照してください
   -->
-  <Identity Name="19949.21959A96CD070" Publisher="CN=CF40A707-AFBE-40AD-9934-854693E11B83" Version="1.1.1.0" ProcessorArchitecture="arm" />
+  <Identity Name="19949.21959A96CD070" Publisher="CN=CF40A707-AFBE-40AD-9934-854693E11B83" Version="1.1.5.0" ProcessorArchitecture="arm" />
   <mp:PhoneIdentity PhoneProductId="44a5453b-2e98-4da4-9078-a708a7a7c2af" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>俺の秘書育成計画</DisplayName>

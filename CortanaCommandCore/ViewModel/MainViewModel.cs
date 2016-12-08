@@ -244,6 +244,8 @@ namespace CortanaCommand.ViewModel
                 AddCommandCommand.Execute(null);
             });
 
+            
+
             CommandPrefix = "コルタナ";
             Example = "こんにちはコルタナ";
             ChangePassCodeCommand.Execute(null);

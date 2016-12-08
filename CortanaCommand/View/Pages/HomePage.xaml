@@ -26,7 +26,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1">
-                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Command" VerticalAlignment="Center" Foreground="{StaticResource ApplicationThemeBrush}" FontSize="21.333"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Commands" VerticalAlignment="Center" Foreground="{StaticResource ApplicationThemeBrush}" FontSize="21.333"/>
             </Grid>
             <ListView x:Name="listBox_command" Margin="0" Grid.Row="1" Background="White" ItemsSource="{Binding CommandList}" BorderBrush="{StaticResource ApplicationThemeBrush}" BorderThickness="1" CanDragItems="True" CanReorderItems="True" ReorderMode="Enabled" CanDrag="True" AllowDrop="True" ItemClick="listBox_command_ItemClick" IsItemClickEnabled="True" ItemContainerStyle="{StaticResource ListViewItemStyle}" >
                 <ListView.Transitions>

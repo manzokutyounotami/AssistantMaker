@@ -358,9 +358,9 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>19949.21959A96CD070</MainPackageIdentityName>
+    <MainPackageIdentityName>19949.1983798F3D9D0</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>俺の秘書育成計画</ReservedName>
+      <ReservedName>アシスタントメーカー</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
@@ -393,10 +393,11 @@
     <MainPackageIdentityName>19949.in</MainPackageIdentityName>
     <MainPackageIdentityName>19949.53377EF7016F0</MainPackageIdentityName>
     <MainPackageIdentityName>19949.27930134DDD87</MainPackageIdentityName>
+    <MainPackageIdentityName>19949.21959A96CD070</MainPackageIdentityName>
     <MainPackageIdentityName>19949.33020C512B36E</MainPackageIdentityName>
     <MainPackageIdentityName>19949.LT</MainPackageIdentityName>
     <MainPackageIdentityName>19949.604950470FF7D</MainPackageIdentityName>
     <MainPackageIdentityName>19949.23873493FEA61</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGH58QNH" />
+  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9P803N2VKG8B" />
 </StoreAssociation>

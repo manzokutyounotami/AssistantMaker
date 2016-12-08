@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="CortanaCommand.View.Pages.ProfilePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CortanaCommand.View.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="10">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="プロファイル管理" FontSize="36" Foreground="{StaticResource ApplicationThemeBrush}"/>
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="アシスタントメーカーは作成したコマンド群をプロファイルとして入出力できます。お友達のプロファイルと交換してアシスタントを入れ替えよう！"/>
+            <Grid Height="194">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="プロファイルエクスポート" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+                <TextBlock Margin="0,50,0,0" TextWrapping="Wrap" Text="プロファイルをファイルとして出力します" VerticalAlignment="Top" FontSize="18"/>
+                <TextBlock x:Name="textBlock3" Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="プロファイルインポート" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+                <TextBlock Margin="0,50,0,0" Grid.Column="1" TextWrapping="Wrap" Text="出力されたプロファイルをインポートします。現在編集中のコマンドは消えるので注意" VerticalAlignment="Top" FontSize="18"/>
+                <Button x:Name="buttonExport" Content="Export" HorizontalAlignment="Center" Margin="0,0,0,30" VerticalAlignment="Bottom" Height="50" Width="150" Background="{StaticResource ApplicationThemeBrush}" Foreground="White" Click="buttonExport_Click"/>
+                <Button x:Name="buttonImport" Grid.Column="1" Content="Import" HorizontalAlignment="Center" Margin="0,0,0,30" VerticalAlignment="Bottom" Height="50" Width="150" Background="{StaticResource ApplicationThemeBrush}" Foreground="White" Click="buttonImport_Click"/>
+            </Grid>
+            <TextBlock TextWrapping="Wrap" Text="プロファイルストアとしてGitHubにみんなが作ったプロファイルを置いています。ダウンロードしてインポートしよう！"/>
+            <TextBlock TextWrapping="Wrap" Text="自分のプロファイルのストアでの公開はGitHubのPullRequestにて受け付けます"/>
+            <Button x:Name="buttonStore" Grid.Column="1" Content="Go to Store" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Bottom" Height="50" Width="150" Background="{StaticResource ApplicationThemeBrush}" Foreground="White" Click="buttonStore_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

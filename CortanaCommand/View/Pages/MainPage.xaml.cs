@@ -64,14 +64,7 @@ namespace CortanaCommand
             });
             Messenger.Default.Register<bool>("","updating",(bol)=> 
             {
-                if (bol)
-                {
-                    progressUpdating.IsActive = true;
-                }
-                else
-                {
-                    progressUpdating.IsActive = false;
-                }
+                
             });
 
             this.DataContext = App.ViewModel;
@@ -175,6 +168,15 @@ namespace CortanaCommand
         private async void appButtonHelp_Click(object sender, RoutedEventArgs e)
         {
             await Launcher.LaunchUriAsync(new Uri("https://github.com/garicchi/CortanaCommand/wiki"));
+        }
+
+        private void appButtonProfile_Click(object sender, RoutedEventArgs e)
+        {
+            frameContent.Navigate(typeof(ProfilePage), null);
+            if (App.StateManager.CurrentState != AppState.Wide)
+            {
+                splitView.IsPaneOpen = false;
+            }
         }
     }
 

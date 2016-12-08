@@ -4,6 +4,7 @@ using CortanaCommandCore.ViewModel;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -295,6 +296,29 @@ namespace CortanaCommand
                 }
             }
             return null;
+        }
+
+        public static async Task SaveProfileAsync(StorageFile saveFile)
+        {
+            var json = JsonConvert.SerializeObject(App.ViewModel.CommandList, new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.All
+            });
+            await FileIO.WriteTextAsync(saveFile, json);
+        }
+
+        public static async Task LoadProfileAsync(StorageFile file)
+        {
+            var json = await FileIO.ReadTextAsync(file);
+            var commands = JsonConvert.DeserializeObject<ObservableCollection<CommandViewModel>>(json, new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Auto
+            });
+            App.ViewModel.CommandList.Clear();
+            foreach (var c in commands)
+            {
+                App.ViewModel.CommandList.Add(c);
+            }
         }
     }
 }

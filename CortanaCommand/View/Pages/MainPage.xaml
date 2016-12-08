@@ -72,6 +72,7 @@
                         <AppBarButton x:Name="appButtonEditor" Foreground="White" Icon="Microphone" Label="コマンドエディタ" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonEditor_Click" />
                         <AppBarButton x:Name="appButtonXml" Foreground="White" Icon="Page2" Label="登録済みXML" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonXml_Click" />
                         <AppBarButton x:Name="appButtonPreview" Foreground="White" Icon="Volume" Label="発話例" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonPreview_Click" />
+                        <AppBarButton x:Name="appButtonProfile" Foreground="White" Icon="Shop" Label="プロファイル管理" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonProfile_Click"  />
                         <AppBarButton x:Name="appButtonHelp" Icon="Help" Label="使い方" Foreground="White" Style="{StaticResource SplitViewAppBarButtonStyle}" Width="Auto" Click="appButtonHelp_Click"></AppBarButton>
                     </StackPanel>
 
@@ -89,14 +90,11 @@
         </SplitView>
         <CommandBar HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Top" Background="{x:Null}" Grid.RowSpan="2" >
             <CommandBar.PrimaryCommands>
-                <AppBarButton>
-                    <ProgressRing x:Name="progressUpdating" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsActive="false" ></ProgressRing>
-                </AppBarButton>
                 <AppBarButton Icon="Upload" Label="Update" Foreground="White" Command="{Binding UpdateCortanaCommand}"/>
                 
             </CommandBar.PrimaryCommands>
         </CommandBar>
-        
+       
     </Grid>
     
 </Page>

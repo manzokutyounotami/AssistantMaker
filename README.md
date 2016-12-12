@@ -1,5 +1,6 @@
 # アシスタントメーカー (旧 俺の秘書育成計画)
 Windows10に搭載されたパーソナルアシスタントCortanaに対話ルールを実装するWindowsアプリ
+![alt](https://github.com/garicchi/AssistantMaker/blob/master/WikiImage/state1.PNG?raw=true)
 
 Aを話したときにBを発話させるなどのルールはもちろんのこと、WPFアプリと連携することでAを話したときにpowershellでコマンド実行などもできる
 

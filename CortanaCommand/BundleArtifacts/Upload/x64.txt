@@ -1,2 +1,2 @@
-MainPackage=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\x64\Release\Upload\CortanaCommand_1.1.0.0_x64.appx
-SymbolPackage=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\AppPackages\CortanaCommand_1.1.0.0\CortanaCommand_1.1.0.0_x64.appxsym
+MainPackage=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\x64\Release\Upload\CortanaCommand_1.1.1.0_x64.appx
+SymbolPackage=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\AppPackages\CortanaCommand_1.1.1.0\CortanaCommand_1.1.1.0_x64.appxsym

@@ -1,6 +1,6 @@
-MainPackage=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.0.0_ARM.appx
-SymbolPackage=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\AppPackages\CortanaCommand_1.1.0.0_Test\CortanaCommand_1.1.0.0_ARM.appxsym
-ResourcePack=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.0.0_scale-100.appx
-ResourcePack=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.0.0_scale-125.appx
-ResourcePack=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.0.0_scale-150.appx
-ResourcePack=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.0.0_scale-400.appx
+MainPackage=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.1.0_ARM.appx
+SymbolPackage=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\AppPackages\CortanaCommand_1.1.1.0_Test\CortanaCommand_1.1.1.0_ARM.appxsym
+ResourcePack=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.1.0_scale-100.appx
+ResourcePack=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.1.0_scale-125.appx
+ResourcePack=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.1.0_scale-150.appx
+ResourcePack=C:\Users\garicchi\projects\repos\CortanaCommand\CortanaCommand\bin\ARM\Release\CortanaCommand_1.1.1.0_scale-400.appx

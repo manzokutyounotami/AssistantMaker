@@ -15,9 +15,6 @@ namespace CortanaCommandServer
             PowerShellPath = @"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe";
             PassCode = "";
             IsAutoStart = false;
-            IsMinimizeStart = false;
-            IsMinimizeOnClosing = false;
-            UseTaskTray = false;
         }
 
         private string _passCode;
@@ -44,29 +41,7 @@ namespace CortanaCommandServer
             set { this.Set(ref _isAutoStart, value); }
         }
 
-        private bool _isMinimizeStart;
-
-        public bool IsMinimizeStart
-        {
-            get { return _isMinimizeStart; }
-            set { this.Set(ref _isMinimizeStart, value); }
-        }
-
-        private bool _isMinimizeOnClosing;
-
-        public bool IsMinimizeOnClosing
-        {
-            get { return _isMinimizeOnClosing; }
-            set { this.Set(ref _isMinimizeOnClosing, value); }
-        }
-
-        private bool _useTaskTray;
-
-        public bool UseTaskTray
-        {
-            get { return _useTaskTray; }
-            set { this.Set(ref _useTaskTray, value); }
-        }
+        
 
 
     }
